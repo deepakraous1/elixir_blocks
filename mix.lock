@@ -1,0 +1,5 @@
+%{
+  "cubdb": {:hex, :cubdb, "0.17.0", "a0a1ce830bc74b94a2e78aea1c529750028e822ae741752245d7f9bdd10c116f", [:mix], [], "hexpm"},
+  "keccakf1600": {:hex, :keccakf1600, "3.0.0", "1ce8747361c73a73bc1000331f2411f49384a762eac1f5145dcd239e137c7abb", [:rebar3], [], "hexpm"},
+  "poison": {:hex, :poison, "4.0.1", "bcb755a16fac91cad79bfe9fc3585bb07b9331e50cfe3420a24bcc2d735709ae", [:mix], [], "hexpm"},
+}
