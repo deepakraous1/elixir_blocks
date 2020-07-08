@@ -2,18 +2,10 @@ defmodule ElixirBlocks do
   @moduledoc """
   Documentation for ElixirBlocks.
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirBlocks.hello()
-      :world
-
-  """
   import BloomFilter
   import Crypto
+  import Trie
+  
 
    @doc "Genesis block defenition"
    defp genesis_block do 
@@ -33,7 +25,6 @@ defmodule ElixirBlocks do
       extraData: "Geth/v1.0.0/linux/go1.4.2",
       mixHash: "437fa41b15c73334a947241ec885423a487d4401a0c3ec7c30550c1e039bccd7",
       nonce: "c5317acb884dfc49"
-
     }  
   end
 

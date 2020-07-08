@@ -1,10 +1,16 @@
 defmodule BloomFilter do
-    #init Bloom filter set to all 00000000
+
+    #Init Bloom Filter set to all 00000000
     def init do
         ethBloomLst = "00000000" 
                     |>hash_function
                     |>first_order_3bytes
                     |>hash_function
+    end
+
+    #Add to Bloom
+    def add(data) do
+        hash(data)
     end
     
     #Bloom Filter Length
@@ -14,16 +20,13 @@ defmodule BloomFilter do
         |> Base.encode16(case: :lower)
     end
   
-    #
+    #First order 3bytes
     def first_order_3bytes(hashed_data) do
         hashed_data 
         |> String.slice(0..5)
     end
   
-    def add_to_bloom(data) do
-        hash(data)
-    end
-
+    #First order 3bytes
     def has(data) do
         data
     end
