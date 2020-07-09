@@ -14,7 +14,17 @@ def deps do
 end
 ```
 
-## Repl.it
+## Repl.it [TODO]
+
+## Skeleton
+
+ Toy Blockchain to run through the concepts
+  1.Genesis
+  2.BlockHeader
+  3.Adding a New Block
+  4.Form a {K,V}
+  5.RLP {K,V}
+  6.Trie 
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can

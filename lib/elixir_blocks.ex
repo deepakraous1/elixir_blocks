@@ -1,6 +1,12 @@
 defmodule ElixirBlocks do
   @moduledoc """
   Documentation for ElixirBlocks.
+  Toy Blockchain to run through the concepts
+  1.Genesis
+  2.BlockHeader
+  3.Adding a New Block
+  4.Form a {K,V}
+  5.
   """
   import BloomFilter
   import Crypto
