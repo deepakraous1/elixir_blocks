@@ -62,8 +62,8 @@ defmodule ElixirBlocks do
 
   ## Examples
 
-      iex> ElixirBlocks.init("x")
-  
+      iex> [_ ,_ ] = ElixirBlocks.init("x")
+           
   """
   def init(file_path) do
     # Blockchain 
@@ -73,6 +73,7 @@ defmodule ElixirBlocks do
     key = new_key()
     CubDB.put(db, key, genesis_block)
     [key, genesis_block]
+    
   end
 
   @doc "Insert a new Block"
