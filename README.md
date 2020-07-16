@@ -2,7 +2,7 @@
   Toy Blockchain in Elixir
 
 # TODO's
-- [ ] Genesis
+- [x] Genesis
 - [ ] BlockHeader
 - [ ] Constuct a Block
 - [ ] Form a { K,V }
@@ -28,4 +28,4 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/elixir_blocks](https://hexdocs.pm/elixir_blocks).
 
-# elixir_blocks
+

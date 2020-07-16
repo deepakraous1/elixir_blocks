@@ -1,20 +1,35 @@
 defmodule ElixirBlocks do
   @moduledoc """
-  Documentation for ElixirBlocks.
-  Toy Blockchain to run through the concepts
+  Toy Blockchain in Elixir to run through the concepts
+
   1.Genesis
   2.BlockHeader
   3.Adding a New Block
   4.Form a {K,V}
-  5.
+  5.RLP {K,V}
+  6.Trie 
+
   """
   import BloomFilter
   import Crypto
   import Trie
-  
+ 
+  @doc "Basic Block definition"
+  def block do
 
-   @doc "Genesis block defenition"
-   defp genesis_block do 
+    block = %{
+      meta: "one_text",
+      timestamp: "naive_datetime",
+      prev_hash: "hash_of_the_previous_block",
+      hash: "hash_of_the_current_block",
+      data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+    }
+
+  end
+
+  @doc "Genesis block def"
+  defp genesis_block do 
+
     genesis_block = %{
       parentHash: "cd7bd64fba4cc782fe5474d3640882afece5887180591e72f80ce6916cf73526",
       ommersHash: "1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
@@ -31,7 +46,8 @@ defmodule ElixirBlocks do
       extraData: "Geth/v1.0.0/linux/go1.4.2",
       mixHash: "437fa41b15c73334a947241ec885423a487d4401a0c3ec7c30550c1e039bccd7",
       nonce: "c5317acb884dfc49"
-    }  
+    }    
+
   end
 
   @doc "New key generation"
@@ -41,11 +57,33 @@ defmodule ElixirBlocks do
     new_hash
   end
 
-   @doc "Build the initial block of the chain"
-  def init do
+  @doc ~S"""
+  Inits a Genesis block.
+
+  ## Examples
+
+      iex> ElixirBlocks.init("x")
+  
+  """
+  def init(file_path) do
     # Blockchain 
-    block_chain = %{ "" => %{} }
-    Map.put_new(block_chain,new_key(),genesis_block() )
+    file_path = File.cwd!<>"/db"
+    block_chain = %{  }
+    {:ok, db} = CubDB.start_link(data_dir: file_path)
+    key = new_key()
+    CubDB.put(db, key, genesis_block)
+    [key, genesis_block]
   end
+
+  @doc "Insert a new Block"
+  def insert(block_chain,new_block,txn) do
+    block_chain
+  end
+  
+  @doc "Valid Block"
+  def valid(block,block_chain) do
+      block
+  end
+  
 
 end

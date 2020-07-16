@@ -105,7 +105,7 @@ defmodule ElixirRlp.Encode do
                 fn (number,binary) -> binary <> <<number>> end
                )
 
-      end
+    end
 
       #Short list
       defp list_encode(encoded_string, _payload) when byte_size(encoded_string) <= 55 do
