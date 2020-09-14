@@ -95,4 +95,20 @@ defmodule ElixirBlocks do
       block
   end
   
+  def extracte_pattern(state_0,state_1) do 
+    state_0
+  end
+
+  def compose(state_0,state_1) do 
+    state_1
+  end
+
+  def add_state(state_0,state_1) do 
+    state_1
+  end
+
+  def view(state,depth) do 
+    state+depth
+  end
+
 end
