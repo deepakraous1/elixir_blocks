@@ -50,20 +50,22 @@ defmodule ElixirBlocks do
 
   end
 
-  @doc "New key generation"
+  @doc "New Key Generation"
   defp new_key() do
     rand_string = Crypto.gen_random()
     new_hash = Crypto.sha_256(rand_string)
     new_hash
   end
 
+  @doc "Block Header definition"
+  def block_header(block) do
+    block
+  end
+  
   @doc ~S"""
   Inits a Genesis block.
-
   ## Examples
-
-      iex> [_ ,_ ] = ElixirBlocks.init("x")
-           
+      iex> [_ ,_ ] = ElixirBlocks.init("x")         
   """
   def init(file_path) do
     # Blockchain 
@@ -73,18 +75,24 @@ defmodule ElixirBlocks do
     key = new_key()
     CubDB.put(db, key, genesis_block)
     [key, genesis_block]
-    
   end
 
-  @doc "Insert a new Block"
+  @doc ~S"""
+  Inits a Genesis block.
+  ## Examples
+      iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
+  """
   def insert(block_chain,new_block,txn) do
     block_chain
   end
   
-  @doc "Valid Block"
+  @doc ~S"""
+  Valids a Block
+  ## Examples
+      iex> [_] = ElixirBlocks.valid( "blk","blk_chain" )         
+  """
   def valid(block,block_chain) do
       block
   end
   
-
 end
