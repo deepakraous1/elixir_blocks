@@ -1,46 +1,61 @@
-defmodule BloomFilter do
+ defmodule BloomFilter do
 
-    #Init Bloom Filter set to all 00000000
+    @doc ~S"""
+    Init Bloom Filter set to all 00000000
+    ## Examples
+      iex> [_] = ElixirBlocks.init()         
+    """
     def init do
-        ethBloomLst = "00000000" 
-                    |>hash_function
-                    |>first_order_3bytes
-                    |>hash_function
-    end
+        _ethBloomLst = "00000000"               
+    end               
 
-    #Add to Bloom
+    @doc ~S"""
+    Add to Bloom
+    ## Examples
+      iex> [_] = ElixirBlocks.add("data")         
+    """
+    @doc 
     def add(data) do
         hash(data)
     end
     
-    #Bloom Filter Length
-    def hash_function(data) do
-        data 
-        |> :keccakf1600.sha3_256
-        |> Base.encode16(case: :lower)
+    @doc ~S"""
+    Hash Function
+    ## Examples
+      iex> [_] = ElixirBlocks.hash_function("data")         
+    """
+    def hash_function(data) do 
+         data 
     end
   
-    #First order 3bytes
+    @doc ~S"""
+    First Order of 3 bytes
+    ## Examples
+      iex> [_] = ElixirBlocks.hash_function("data")         
+    """
     def first_order_3bytes(hashed_data) do
         hashed_data 
         |> String.slice(0..5)
     end
   
-    #First order 3bytes
+    @doc "First order 3bytes"
     def has(data) do
         data
     end
     
+    @doc "First order 3bytes"
     def xor(hash) do
-        hash
+       hash
     end
 
+    @doc "First order 3bytes"
     defp max() do
         2048
     end
   
+    @doc "First order 3bytes"
     defp hash(data) do
-        data
+       data
     end
 
 end
