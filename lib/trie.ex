@@ -1,6 +1,5 @@
 defmodule Trie do
-  
-  
+   
   @trie_map %{96781234 => ["/", [0], [-99999] ] }
   @characters ""
   
@@ -66,5 +65,3 @@ defmodule Trie do
   end
 
 end
-
-
