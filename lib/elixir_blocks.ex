@@ -110,5 +110,13 @@ defmodule ElixirBlocks do
   def view(state,depth) do 
     state+depth
   end
+  
+  def get_type(state) do 
+     type(state)
+  end
 
+  def type(state) do 
+    state
+  end
 end
+
