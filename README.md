@@ -14,7 +14,7 @@
 ## Installation( In Progress.. )
 
 ## Refer to:
-https://medium.com/p/3ead47725a8f/edit
+- [9](https://medium.com/p/3ead47725a8f/edit)
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
