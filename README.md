@@ -13,6 +13,13 @@
 
 ## Installation( In Progress.. )
 
+- [x] Local test
+- [ ] Build success
+- [ ] Test a simple state
+- [ ] Note depth
+- [ ] Form {K,V}
+- [ ] Repl.it
+
 ## Refer to:
 - [9](https://medium.com/p/3ead47725a8f/edit)
 
