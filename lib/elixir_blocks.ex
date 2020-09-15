@@ -89,7 +89,8 @@ defmodule ElixirBlocks do
   @doc ~S"""
   Valids a Block
   ## Examples
-      iex> [_] = ElixirBlocks.valid( "blk","blk_chain" )         
+      iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+      "MASS:6.5"        
   """
   def valid(block,block_chain) do
       block
@@ -104,6 +105,7 @@ defmodule ElixirBlocks do
   end
 
   def add_state(state_0,state_1) do 
+    hash
     state_1
   end
 
