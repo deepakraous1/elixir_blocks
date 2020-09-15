@@ -21,10 +21,11 @@ defmodule ElixirBlocks.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:dependency, "~> 0.2.0", override: true},    
+      #{:exmoji, "~> 0.2.0"},
       {:poison, "~> 4.0"},
       {:retrieval, "~> 0.9.1"},
-      {:cubdb, "~> 0.17.0"},
-      {:exmoji, "~> 0.2.2"}
+      {:cubdb, "~> 0.17.0"}
     ]
   end
   
