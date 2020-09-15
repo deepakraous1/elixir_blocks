@@ -118,5 +118,9 @@ defmodule ElixirBlocks do
   def type(state) do 
     state
   end
-end
 
+  def spawn_block(state) do
+    spawn(fn -> IO.puts("hello world") end)
+  end
+ 
+end
