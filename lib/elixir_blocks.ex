@@ -105,7 +105,6 @@ defmodule ElixirBlocks do
   end
 
   def add_state(state_0,state_1) do 
-    hash
     state_1
   end
 
