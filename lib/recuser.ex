@@ -1,62 +1,170 @@
 defmodule Recurser do
-
-    @doc ~S"""
-     Generates Random 32 bits
-     ## https://stackoverflow.com/questions/41735442
-     ##  
-
-      iex> [_] = ElixirBlocks.gen_random()
-           
-     """
-    def gen_random() do
-        length = 32
-        :crypto.strong_rand_bytes(length) 
-        |> Base.encode64 
-        |> binary_part(0, length)
+    @moduledoc """
+    Toy Blockchain in Elixir to run through the concepts
+  
+    1.Genesis
+    2.BlockHeader
+    3.Adding a New Block
+    4.Form a {K,V}
+    5.RLP {K,V}
+    6.Trie 
+  
+    """
+    import BloomFilter
+    import Crypto
+    import Trie
+   
+    @doc "Basic Block definition"
+    def block do
+  
+      block = %{
+        meta: "one_text",
+        timestamp: "naive_datetime",
+        prev_hash: "hash_of_the_previous_block",
+        hash: "hash_of_the_current_block",
+        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+      }
+  
     end
-
-    @doc ~S"""
-     Generates Random 32 bits
-     ## https://stackoverflow.com/questions/41735442
-     
-      iex> [_] = ElixirBlocks.hash("block")
-           
-     """
-    def hash(%{}=block) do
-        block
-        |>Poison.encode16 # Convert to binary
-        |>sha_256
+  
+    @doc "Genesis block def"
+    defp genesis_block do 
+  
+      genesis_block = %{
+        parentHash: "cd7bd64fba4cc782fe5474d3640882afece5887180591e72f80ce6916cf73526",
+        ommersHash: "1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+        beneficiary: "f927a40c8b7f6e07c5af7fa2155b4864a4112b13",
+        stateRoot: "30430d24554454b251003be3d027dea94397bf45cd34c6a06abcfec662242046",
+        transactionRoot: "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+        receiptsRoot: "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+        logsBloom: BloomFilter.init,
+        difficulty: "3b32b8463f",
+        number: 1780,
+        gasLimit: 1388,
+        gasUsed: "",
+        timestamp: "55ba9f2d",
+        extraData: "Geth/v1.0.0/linux/go1.4.2",
+        mixHash: "437fa41b15c73334a947241ec885423a487d4401a0c3ec7c30550c1e039bccd7",
+        nonce: "c5317acb884dfc49"
+      }    
+  
     end
-
-    @doc ~S"""
-      Append the given block to an existing block
-      iex> [_] = ElixirBlocks.add_block("newBlock")         
-     """
-    def add_block(%{}=block) do 
-        %{block|hash: hash(block)}
+  
+    @doc "New Key Generation"
+    defp new_key() do
+      rand_string = Crypto.gen_random()
+      new_hash = Crypto.sha_256(rand_string)
+      new_hash
     end
-
-    @doc ~S"""     
-       Sha256 Hash
-       iex> [_] = ElixirBlocks.sha_256(<<101,102>>)          
-     """
-    def sha_256(data) do
-
-        :crypto.hash(:sha256, <<101>>)
-        |>Base.encode16
-        
+  
+    @doc "Block Header definition"
+    def block_header(block) do
+      block
     end
-
-    @doc ~S"""     
-       Sha256 Hash
-       iex> [_] = ElixirBlocks.sha_256(<<101,102>>)          
-     """
-     def sha_256(data) do
-
-        :crypto.hash(:sha256, <<101>>)
-        |>Base.encode16
-        
-    end
-
     
-end
+    @doc ~S"""
+    Inits a Genesis block.
+    ## Examples
+        iex> [_ ,_ ] = ElixirBlocks.init("x")         
+    """
+    def init(file_path) do
+      # Blockchain 
+      file_path = File.cwd!<>"/db"
+      block_chain = %{  }
+      {:ok, db} = CubDB.start_link(data_dir: file_path)
+      key = new_key()
+      CubDB.put(db, key, genesis_block)
+      [key, genesis_block]
+    end
+  
+    @doc ~S"""
+    Inits a Genesis block.
+    ## Examples
+        iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
+    """
+    def insert(block_chain,new_block,txn) do
+      block_chain
+    end
+    
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def valid(block,block_chain) do
+        block
+    end
+    
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def extracte_pattern(state_0,state_1) do 
+      state_0
+    end
+  
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def compose(state_0,state_1) do 
+      state_1
+    end
+  
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def add_state(state_0,state_1) do 
+      state_1
+    end
+   
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def view(state,depth) do 
+      state+depth
+    end
+    
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def get_type(state) do 
+       type(state)
+    end
+  
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def type(state) do 
+      state
+    end
+  
+    @doc ~S"""
+    Valids a Block
+    ## Examples
+        iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+        "MASS:6.5"        
+    """
+    def spawn_block(state) do
+      spawn(fn -> IO.puts("hello world") end)
+    end
+   
+  end
+  
