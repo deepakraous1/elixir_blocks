@@ -13,6 +13,7 @@ defmodule ElixirBlocks do
   import BloomFilter
   import Crypto
   import Trie
+  #import Recurser
  
   @doc "Basic Block definition"
   def block do
@@ -77,51 +78,6 @@ defmodule ElixirBlocks do
     [key, genesis_block]
   end
 
-  @doc ~S"""
-  Inits a Genesis block.
-  ## Examples
-      iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
-  """
-  def insert(block_chain,new_block,txn) do
-    block_chain
-  end
-  
-  @doc ~S"""
-  Valids a Block
-  ## Examples
-      iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
-      "MASS:6.5"        
-  """
-  def valid(block,block_chain) do
-      block
-  end
-  
-  def extracte_pattern(state_0,state_1) do 
-    state_0
-  end
-
-  def compose(state_0,state_1) do 
-    state_1
-  end
-
-  def add_state(state_0,state_1) do 
-    state_1
-  end
-
-  def view(state,depth) do 
-    state+depth
-  end
-  
-  def get_type(state) do 
-     type(state)
-  end
-
-  def type(state) do 
-    state
-  end
-
-  def spawn_block(state) do
-    spawn(fn -> IO.puts("hello world") end)
-  end
- 
+   
 end
+
