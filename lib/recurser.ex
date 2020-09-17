@@ -2,10 +2,11 @@ defmodule Recurser do
     @moduledoc """
     Toy Blockchain in Elixir to run through the concepts
   
-    1.Genesis
+    1.Block
     2.BlockHeader
-    3.Adding a New Block
+    3.Genesis Block
     4.Form a {K,V}
+    5.BloomFilter
     5.RLP {K,V}
     6.Trie 
   
@@ -13,8 +14,10 @@ defmodule Recurser do
     import BloomFilter
     import Crypto
     import Trie
+    import ElixirBlocks
    
-    @doc "Basic Block definition"
+    @doc "[ {hash_0:data_0},{key_1:data_1},{key_n:data_n} ]"
+
     def block do
   
       block = %{
@@ -62,20 +65,6 @@ defmodule Recurser do
       block
     end
     
-    @doc ~S"""
-    Inits a Genesis block.
-    ## Examples
-        iex> [_ ,_ ] = ElixirBlocks.init("x")         
-    """
-    def init(file_path) do
-      # Blockchain 
-      file_path = File.cwd!<>"/db"
-      block_chain = %{  }
-      {:ok, db} = CubDB.start_link(data_dir: file_path)
-      key = new_key()
-      CubDB.put(db, key, genesis_block)
-      [key, genesis_block]
-    end
   
     @doc ~S"""
     Inits a Genesis block.
@@ -166,5 +155,20 @@ defmodule Recurser do
       spawn(fn -> IO.puts("hello world") end)
     end
    
+    @doc ~S"""
+    Inits a Genesis block.
+    ## Examples
+        iex> [_ ,_ ] = ElixirBlocks.init("x")         
+    """
+    def init(file_path) do
+        # Blockchain 
+        file_path = File.cwd!<>"/db"
+        block_chain = %{  }
+        {:ok, db} = CubDB.start_link(Data_dir: file_path)
+        key = new_key()
+        CubDB.put(db, key, genesis_block)
+        [key, genesis_block]
+      end
   end
+  
   
