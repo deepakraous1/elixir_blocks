@@ -15,7 +15,11 @@ defmodule ElixirBlocks do
   import Trie
   #import Recurser
  
-  @doc "Basic Block definition"
+  #Genensis Info
+
+  # Source:MASS65*
+  # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
+  @doc "Basic Block def"
   def block do
 
     block = %{
