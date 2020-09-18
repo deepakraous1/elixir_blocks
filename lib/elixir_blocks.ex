@@ -15,7 +15,7 @@ defmodule ElixirBlocks do
   import Trie
   #import Recurser
  
-  #Genensis Info
+  #Genesis Info
 
   # Source:MASS65*
   # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
@@ -36,7 +36,7 @@ defmodule ElixirBlocks do
   defp genesis_block do 
 
     genesis_block = %{
-      parentHash: "cd7bd64fba4cc782fe5474d3640882afece5887180591e72f80ce6916cf73526",
+      parentHash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
       ommersHash: "1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
       beneficiary: "f927a40c8b7f6e07c5af7fa2155b4864a4112b13",
       stateRoot: "30430d24554454b251003be3d027dea94397bf45cd34c6a06abcfec662242046",
@@ -84,4 +84,3 @@ defmodule ElixirBlocks do
 
    
 end
-
