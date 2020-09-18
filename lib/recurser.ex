@@ -16,15 +16,22 @@ defmodule Recurser do
     import Trie
     import ElixirBlocks
    
-    @doc "[ {hash_0:data_0},{hash_1:data_1},{hash_n:data_n} ]"
+    
+    @doc ~S"""
+    Inits a Genesis block.
+    # [ {hash_0:data_0},{hash_1:data_1},{hash_n:data_n} ]
+    ## Examples
+        iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
+    """
     def block do
   
       block = %{
-        meta: "one_text",
-        timestamp: "naive_datetime",
+        meta: "MASS65*",
+        timestamp: "0001 00:00:00",
         prev_hash: "hash_of_the_previous_block",
         hash: "hash_of_the_current_block",
         data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+        player: "Players in The System"
       }
   
     end
@@ -36,11 +43,12 @@ defmodule Recurser do
     defp genesis_block do 
   
       genesis_block = %{
-        meta: "one_text",
-        timestamp: "Elixir_Date_Time",
+        meta: "MASS65*",
+        timestamp: "0001 00:00:00",
         prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
-        hash: "NexrBlockHash",
+        hash: "hash(next(MASS65*)))",
         data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+        player: "hash(address(MASS65*))"
       }    
   
     end
@@ -161,4 +169,4 @@ defmodule Recurser do
         [key, genesis_block]
       end
   end
- 
+  
