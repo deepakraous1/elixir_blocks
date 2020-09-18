@@ -3,8 +3,8 @@
 
 # TODO's
 - [x] Genesis
-- [ ] BlockHeader
-- [ ] Constuct a Block
+- [x] BlockHeader
+- [x] Constuct a Block
 - [ ] Form a { K,V }
 - [ ] RLP { K,V }
 - [ ] Trie
