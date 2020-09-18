@@ -1,6 +1,6 @@
 defmodule Recurser do
     @moduledoc """
-    Toy Blockchain in Elixir to run through the concepts
+    Recursive state machine named "Recurser"
   
     1.Block
     2.BlockHeader
@@ -36,21 +36,11 @@ defmodule Recurser do
     defp genesis_block do 
   
       genesis_block = %{
-        parentHash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
-        ommersHash: "1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-        beneficiary: "f927a40c8b7f6e07c5af7fa2155b4864a4112b13",
-        stateRoot: "30430d24554454b251003be3d027dea94397bf45cd34c6a06abcfec662242046",
-        transactionRoot: "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
-        receiptsRoot: "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
-        logsBloom: BloomFilter.init,
-        difficulty: "3b32b8463f",
-        number: 1780,
-        gasLimit: 1388,
-        gasUsed: "",
-        timestamp: "55ba9f2d",
-        extraData: "Geth/v1.0.0/linux/go1.4.2",
-        mixHash: "437fa41b15c73334a947241ec885423a487d4401a0c3ec7c30550c1e039bccd7",
-        nonce: "c5317acb884dfc49"
+        meta: "one_text",
+        timestamp: "naive_datetime",
+        prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
+        hash: "NexrBlockHash",
+        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
       }    
   
     end
