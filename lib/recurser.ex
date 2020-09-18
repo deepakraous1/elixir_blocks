@@ -37,7 +37,7 @@ defmodule Recurser do
   
       genesis_block = %{
         meta: "one_text",
-        timestamp: "naive_datetime",
+        timestamp: "Elixir_Date_Time",
         prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
         hash: "NexrBlockHash",
         data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
@@ -161,4 +161,4 @@ defmodule Recurser do
         [key, genesis_block]
       end
   end
-  
+ 
