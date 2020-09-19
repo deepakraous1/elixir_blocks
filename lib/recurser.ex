@@ -21,13 +21,13 @@ defmodule Recurser do
     Inits a Genesis block.
     # [ {hash_0:data_0},{hash_1:data_1},{hash_n:data_n} ]
     ## Examples
-        iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
+        iex> [_] = ElixirBlocks.block("blockchain","newblockchain","txn")         
     """
     def block do
   
       block = %{
-        meta: "MASS65*",
-        timestamp: "0001 00:00:00",
+        meta: "Acryonym*",
+        timestamp: "0001 00:00:00 UTC",
         prev_hash: "hash_of_the_previous_block",
         hash: "hash_of_the_current_block",
         data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
@@ -40,9 +40,9 @@ defmodule Recurser do
     # Source:MASS65*
     # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
     @doc "Genesis block def"
-    defp genesis_block do 
+    def genesis do 
   
-      genesis_block = %{
+      genesis = %{
         meta: "MASS65*",
         timestamp: "0001 00:00:00",
         prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
@@ -50,7 +50,7 @@ defmodule Recurser do
         data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
         player: "hash(address(MASS65*))"
       }   
-      ElixirBlocks.Crypto.hash(genesis_block) 
+      ElixirBlocks.Crypto.hash(genesis) 
   
     end
   
@@ -166,8 +166,8 @@ defmodule Recurser do
         block_chain = %{  }
         {:ok, db} = CubDB.start_link(Data_dir: file_path)
         key = new_key()
-        CubDB.put(db, key, genesis_block)
-        [key, genesis_block]
+        CubDB.put(db, key, genesis)
+        [key, genesis]
       end
   end
   
