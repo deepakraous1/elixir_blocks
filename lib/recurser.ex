@@ -30,7 +30,7 @@ defmodule Recurser do
         timestamp: "0001 00:00:00",
         prev_hash: "hash_of_the_previous_block",
         hash: "hash_of_the_current_block",
-        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
         player: "Players in The System"
       }
   
@@ -47,9 +47,10 @@ defmodule Recurser do
         timestamp: "0001 00:00:00",
         prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
         hash: "hash(next(MASS65*)))",
-        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
         player: "hash(address(MASS65*))"
-      }    
+      }   
+      ElixirBlocks.Crypto.hash(genesis_block) 
   
     end
   
