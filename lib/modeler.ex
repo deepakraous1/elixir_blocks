@@ -30,7 +30,7 @@ defmodule Modeler do
   
       block = %{
         meta: "Acryonym*",
-        address: "reciepient address of the block reward"
+        address: "reciepient address of the block reward",
         timestamp: "0001 00:00:00 UTC",
         prev_hash: "hash_of_the_previous_block",
         hash: "hash_of_the_current_block",
