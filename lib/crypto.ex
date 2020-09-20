@@ -1,3 +1,5 @@
+import BloomFilter
+import Trie
 defmodule Crypto do
 
     @doc ~S"""
@@ -5,7 +7,7 @@ defmodule Crypto do
      ## https://stackoverflow.com/questions/41735442
      ##  
 
-      iex> [_] = ElixirBlocks.gen_random()
+      iex> [_] = Crypto.gen_random()
            
      """
     def gen_random() do
@@ -19,7 +21,7 @@ defmodule Crypto do
      Generates Random 32 bits
      ## https://stackoverflow.com/questions/41735442
      
-      iex> [_] = ElixirBlocks.hash("block")
+      iex> [_] = Crypto.hash("block")
            
      """
     def hash(%{}=block) do
@@ -30,7 +32,7 @@ defmodule Crypto do
 
     @doc ~S"""
       Append the given block to an existing block
-      iex> [_] = ElixirBlocks.add_block("newBlock")         
+      iex> [_] = Crypto.add_block("newBlock")         
      """
     def add_block(%{}=block) do 
         %{block|hash: hash(block)}
@@ -38,7 +40,7 @@ defmodule Crypto do
 
     @doc ~S"""     
        Sha256 Hash
-       iex> [_] = ElixirBlocks.sha_256(<<101,102>>)          
+       iex> [_] = Crypto.sha_256(<<101,102>>)          
      """
     def sha_256(data) do
 
@@ -46,5 +48,16 @@ defmodule Crypto do
         |>Base.encode16
         
     end
+
+    @doc ~S"""     
+       address
+       iex> [_] = Crypto.address(address)          
+     """
+     def address(data) do
+        :crypto.hash(data)
+        |>Base.encode16
+        
+    end
+    
     
 end
