@@ -29,7 +29,7 @@ defmodule Key_Value do
     def keyval(data) do
 
       kval = %{ 
-        key: Crypto.hash("MASS65")  #For genesis block
+        key: Crypto.hash("MASS65") , #For genesis block
         data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"        
       }
   
