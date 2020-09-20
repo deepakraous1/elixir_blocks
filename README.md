@@ -3,8 +3,8 @@
 
 # TODO's
 - [x] Genesis
-- [ ] BlockHeader
-- [ ] Constuct a Block
+- [x] BlockHeader
+- [x] Constuct a Block
 - [ ] Form a { K,V }
 - [ ] RLP { K,V }
 - [ ] Trie
@@ -22,8 +22,6 @@
 
 ## Refer to:
 - [9](https://medium.com/p/3ead47725a8f/edit)
-
-## MVP (MASS6️⃣5️⃣*️⃣)
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
