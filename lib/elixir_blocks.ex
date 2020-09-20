@@ -24,7 +24,7 @@ defmodule ElixirBlocks do
 
     block = %{
       meta: "one_text",
-      address: "reciepient address of the block reward"
+      address: "reciepient address of the block reward",
       timestamp: "naive_datetime",
       prev_hash: "hash_of_the_previous_block",
       hash: "hash_of_the_current_block",
