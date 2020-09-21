@@ -4,7 +4,9 @@
 # TODO's
 - [x] Genesis
 - [x] BlockHeader
-- [x] Constuct a Block
+- [x] Construct a Block
+- [ ] Construct a Wallet,Address
+- [ ] Construct Transaction Model
 - [ ] Form a { K,V }
 - [ ] RLP { K,V }
 - [ ] Trie
@@ -13,7 +15,7 @@
 
 ## Installation( In Progress.. )
 
-- [x] Local test
+- [ ] Local test
 - [ ] Build success
 - [ ] Test a simple state
 - [ ] Note depth
