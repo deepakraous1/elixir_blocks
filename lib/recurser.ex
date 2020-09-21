@@ -30,7 +30,7 @@ defmodule Recurser do
 
     block = %{
       meta: "Acryonym*",
-      address: "reciepient address of the block reward"
+      address: "reciepient address of the block reward",
       timestamp: "0001 00:00:00 UTC",
       prev_hash: "hash_of_the_previous_block",
       hash: "hash_of_the_current_block",
@@ -77,8 +77,8 @@ defmodule Recurser do
   ## Examples
       iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
   """
-  def insert(block_chain,new_block,txn) do
-    block_chain
+  def insert(block,new_block,txn) do
+    new_block
   end
   
   @doc ~S"""
@@ -87,7 +87,7 @@ defmodule Recurser do
       iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
       "MASS:6.5"        
   """
-  def valid(block,block_chain) do
+  def valid(block) do
       block
   end
   
@@ -162,6 +162,17 @@ defmodule Recurser do
   end
  
   @doc ~S"""
+  Valids a Block
+  ## Examples
+      iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+      "MASS:6.5"        
+  """
+  def next(state) do
+    next(fn -> IO.puts("MASS65*"+"NextState") end)
+  end
+ 
+  
+  @doc ~S"""
   Inits a Genesis block.
   ## Examples
       iex> [_ ,_ ] = ElixirBlocks.init("x")         
@@ -169,7 +180,7 @@ defmodule Recurser do
   def init(file_path) do
       # Blockchain 
       file_path = File.cwd!<>"/db"
-      block_chain = %{  }
+      block = %{  }
       {:ok, db} = CubDB.start_link(Data_dir: file_path)
       key = new_key()
       CubDB.put(db, key, genesis)
