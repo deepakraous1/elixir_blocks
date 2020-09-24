@@ -93,18 +93,102 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
 
   For this chapter and the next two we will be trying a live way of publishing and coding at the same time. Please be patient with me while I am trying to Automate technical blogging to the max.
 
+# UseCase:Main Flow in using Github
+  1. Push source code to Github
+  2. Step 1 triggers Github Actions
+  3. Github Actions is a part of Github workflow
+  4. Generate Docs 
+  5. Build status in Readme.md
+  6. Update Gists
+  7. Auto Publish 
+  8. Build sourcestream
+  9. Push step:8 -> Quay.io
+  10.Run all unit tests
+  11.Update unit test status in Readme.md
+  12.Goto Step 1
+  
+  # UseCase:Exceptions
+  1. Save State[0,1,2,3,4,...,n]
+  2. Audit State[0,1,2,3,4,...,n]
+  3. Send Notification*[Cat:0,Cat:1,Cat:2,Cat:3,x:n]
+  4. Generate Docs[Readme.md]
+  5. Send Issue to Github^[if error]
+  6. Fix Issue mentioned in step above[5]
+  7. Repeat Step[1,n]
+  
+  *Notification:Research
+  ^Github:Research
+  
+  # MVP0.090.01["WOLF"]
+  (transaction) (data) (blockchain) (processing server) (processing) before:priority:20151105
+  Above format State definition, share Sims to US.
+  
+  #  Rule Definition[In Progress]
+  1. BR_0_0_0: Exception Code Should have Instrumentation@
+  2. Audit State
+  3. Send Notification*
+  4. Generate Docs
+  5. Send Issue to Github*
+  6. Fix Issue mentioned in step above[5]
+  7. Repeat Step[1,n]
+ 
+  # Minimal Viable Product( WE )
+  1. Fix Local build issues
+  2. Emulate all steps for "Happy Path"
+  3. Push code to Github 
+  4. Form Team( Max: 4 - 6 ) 
+  4. Demo Date+Hackacthon 
+  5. **No PPT warriors**
+  6. No Judging needed.
+  7. We Push+Show
+  8. Pick a lead to Prepare Iconic Slides
+  9. All Slides should be in github
+  10.Best Team Wins a Suprise
+  12.Time Hallooooweeen
+  
+  # SharpTooling( Emulators )
+  1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
+  2. Emulate all steps mentioned in workflow
+  3. Push code to Github
+  4. On Push Auto Unit test
+  5. Status on Github
+  
+  # Github Action( Option:1 )
+  ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
+  # Github Best Practices
+  1. ![link](https://www.datree.io/resources/github-best-practices)
+  2. xxxx
+  3. yyyy
+  
+  # Docker Alternatives( Option:2 ) ?????
+  1. Docker to test github actions?
 
-```elixir
-def deps do
-  [
-    {:elixir_blocks, "~> 0.1.0"}
-  ]
-end
-```
+  # External libraries[Elixir]
+  ```
+    {:poison, "~> 4.0"},
+    {:retrieval, "~> 0.9.1"},
+    {:cubdb, "~> 0.17.0"},
+    {:qr_code, "~> 2.1.0"}
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir_blocks](https://hexdocs.pm/elixir_blocks).
+  ```
+  
+  ## Installation
+  If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+  by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
+
+  ```elixir
+  
+  def deps do
+    [
+      {:elixir_blocks, "~> 0.1.0"}
+    ]
+  end
+  
+  ```
+
+![Transactions](https://bit.ly/302Jy81)
+
+# References
+
+![link](https://github.com/aitoroses/elixir-kv)
