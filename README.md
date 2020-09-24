@@ -69,8 +69,30 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
 - [ ] Form {K,V}
 - [ ] Repl.it
 
-## Refer to:
-- [9](https://medium.com/p/3ead47725a8f/edit)
+
+
+# Live Progress on Github and Medium
+
+  This article is being published in both Medium and in gitub([ {Manual+Auto},{x},xx,n] ] ). I propose to 
+  a way to automate technical {publishing + coding} together. Authoring of the stories will be done using Github's Gist.
+
+                   Github
+    +--------+   +-------+    +-------+
+    |        | --+ act   +--> |       |
+    | MrkDwn |   +-------+    | Dploy |
+    |        |   | plgins|    |       |
+    |        |   |   !   |    |       |
+    +---+----+   +-------+    +-------+
+        :                         ^
+        |          Terraform      |
+        +-------------------------+
+
+ [9-Toy Blockchain](https://medium.com/@derao512/ethereum-under-the-hood-part-9-transactions-3ead47725a8f)
+
+  # Why?
+
+  For this chapter and the next two we will be trying a live way of publishing and coding at the same time. Please be patient with me while I am trying to Automate technical blogging to the max.
+
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
