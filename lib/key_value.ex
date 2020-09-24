@@ -73,7 +73,7 @@ defmodule Key_Value do
         iex> [_] = ElixirBlocks.insert("blockchain","newblockchain","txn")         
     """
     def forward(block,count) do
-        block_chain
+        block
     end
     
     @doc ~S"""
@@ -154,12 +154,10 @@ defmodule Key_Value do
     def init(file_path) do
         # Blockchain 
         file_path = File.cwd!<>"/db"
-        block_chain = %{  }
+        block = %{  }
         {:ok, db} = CubDB.start_link(Data_dir: file_path)
-        key = new_key()
-        CubDB.put(db, key, genesis)
-        [key, genesis]
+        key = Crypto.new_key()
+        CubDB.put(db, key, block)
+        [key, block]
       end
   end
-  
-  
