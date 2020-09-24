@@ -5,15 +5,16 @@ defmodule ElixirBlocks do
   1.Genesis
   2.BlockHeader
   3.Adding a New Block
-  4.Form a {K,V}
+  4.Create Wallet,Address
+  5.Transactions
+  4.Form {K,V}
   5.RLP {K,V}
   6.Trie 
+  7.Persist {k:v} using PMT(Patricia Merkel Trie)
+  8.Node Comm
+  9.Test Test Test
 
   """
-  import BloomFilter
-  import Crypto
-  import Trie
-  import Recurser
  
   @doc "New Key Generation"
   defp new_key() do
@@ -39,7 +40,7 @@ defmodule ElixirBlocks do
     {:ok, db} = CubDB.start_link(data_dir: file_path)
     key = new_key()
     CubDB.put(db, key, block)
-    [key, genesis_block]
+    [key, block]
   end
 
    
