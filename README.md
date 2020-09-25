@@ -107,9 +107,9 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   7. Auto Publish 
   8. Build sourcestream
   9. Push step:8 -> Quay.io
-  10.Run all unit tests
-  11.Update unit test status in Readme.md
-  12.Goto Step 1
+  10. Run all unit tests
+  11. Update unit test status in Readme.md
+  12. Goto Step 1
   
   # UseCase:Exceptions
   1. Save State[0,1,2,3,4,...,n]
@@ -192,5 +192,4 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   ```
 
 # References
-
 ![link](https://github.com/aitoroses/elixir-kv)
