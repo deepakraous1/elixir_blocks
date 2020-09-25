@@ -27,14 +27,13 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description |
   |--------|----|-------------|
-  |Nonce   |[2] | A Nonce     |
-  |GasPrice|[3] | Gas Price   |
-  |GasLimit|[4] | Gas Limit   |
-  |To      |[5] | To          |
-  |Value   |[6] | Value       |
-  |v       |[5] | v           |
-  |r       |[4] | r           |
-  |s       |[3] | s           |
+  |Nonce   |[0] | A Nonce     |
+  |GasPrice|[1] | Gas Price   |
+  |GasLimit|[2] | Gas Limit   |
+  |To      |[3] | To          |
+  |Value   |[4] | Value       |
+  |v       |[6] | r           |
+  |s       |[7] | s           |
  
   #Symbols definition( In Progress... )
   
