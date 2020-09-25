@@ -187,7 +187,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
   ```
 
-![Transactions](https://photos.app.goo.gl/tKpMgSDkLJ38CSHe6)
+![Transactions](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png)
 
 # References
 
