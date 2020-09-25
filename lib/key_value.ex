@@ -14,8 +14,6 @@ defmodule Key_Value do
     import BloomFilter
     import Crypto
     import Trie
-    import ElixirBlocks
-   
     
     @doc ~S"""
     A Block is transformed into a Key Value pair.
@@ -161,3 +159,5 @@ defmodule Key_Value do
         [key, block]
       end
   end
+  
+  
