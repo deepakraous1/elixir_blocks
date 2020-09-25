@@ -24,17 +24,21 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |RLP-E   |[RLP-e](https://medium.com/coinmonks/ethereum-under-the-hood-part-ii-i-933411deebe1)| RLP-e |
   |VM      |[ETH](https://medium.com/coinmonks/ethereum-under-the-hood-part-i-ver-0-1-4f2fb24b3d68)| ETH   |
   
+  # Transactions in Ethereum (v1.0)
+
+  This section assumes that you have gone through the series in its enterity. Notice the version on this section(v1.0) I want to emphasis that "Transactions" is a huge topic and hence needs multiple updates.
+  
+  
   # Transactions[4.2 Yellow Paper] Symbol-table
-  |Symbol  |Type| Description |
-  |--------|----|-------------|
-  |Nonce   |[0] | A Nonce     |
-  |GasPrice|[1] | Gas Price   |
-  |GasLimit|[2] | Gas Limit   |
-  |To      |[3] | To          |
-  |Value   |[4] | Value       |
-  |v       |[6] | r           |
-  |s       |[7] | s           |
- 
+  |Symbol  |Type| Description                                |
+  |--------|----|--------------------------------------------|
+  |Nonce   |[0] | Nonce is the base unit of Ethereum Crypto  |
+  |GasPrice|[1] | GP is the price one has to pay for a Txn   |
+  |GasLimit|[2] | GL is the max price set for the above Txn  |
+  |To      |[3] | Address of the reciepent of the Eth Txn    |
+  |Value   |[4] | The value of this Txn in Wie               |
+  |v,r,s   |[5] | v,r,s are txns with diff signatures        |
+
   #Symbols definition( In Progress... )
   
   |Symbol  |Type| Description |
