@@ -187,7 +187,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
   ```
 
-![Transactions](https://bit.ly/302Jy81)
+![Transactions](https://photos.app.goo.gl/tKpMgSDkLJ38CSHe6)
 
 # References
 
