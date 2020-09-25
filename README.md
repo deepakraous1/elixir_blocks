@@ -1,5 +1,7 @@
  ![Logo](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png)
 
+ ![URL](https://deepakraous.github.io/elixir_blocks/)
+ 
 **Elemental Blockchain in Elixir**
 
   Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state compostion technique**, specifically creating a simple computational FlexCapacitor! State Machine!!. which we refer to as our MVP(Minimal Viable Product).
