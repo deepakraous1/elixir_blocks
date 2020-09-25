@@ -15,7 +15,9 @@ defmodule ElixirBlocks do
   9.Test Test Test
 
   """
- 
+
+  import Poison
+  
   @doc "New Key Generation"
   defp new_key() do
     rand_string = Crypto.gen_random()
