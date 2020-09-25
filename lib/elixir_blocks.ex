@@ -17,7 +17,7 @@ defmodule ElixirBlocks do
   """
 
   import Poison
-  
+
   @doc "New Key Generation"
   defp new_key() do
     rand_string = Crypto.gen_random()
@@ -31,14 +31,17 @@ defmodule ElixirBlocks do
   end
   
   @doc ~S"""
-  Inits a Genesis block.
+  Inits a Genesis block and stores the result to a k,v
+  database
+
   ## Examples
-      iex> [_ ,_ ] = ElixirBlocks.init("x")         
+      iex> [_x ,_y ] = ElixirBlocks.init("x")         
   """
   def init(file_path) do
     # Blockchain 
     file_path = File.cwd!<>"/db"
     block = %{  }
+    block = Recurser.genesis()
     {:ok, db} = CubDB.start_link(data_dir: file_path)
     key = new_key()
     CubDB.put(db, key, block)
