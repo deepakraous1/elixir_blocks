@@ -39,10 +39,10 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
   |Symbol  |Type| Description |
   |--------|----|-------------|
-  |+       |[2] | Add.        |
-  |0       |[3] | Null        |
-  |1       |[4] | A Value     |
-  |f       |[5] | A Function  |
+  |+       |[10] | Add.       |
+  |0       |[9] | Null        |
+  |1       |[8] | A Value     |
+  |f       |[7] | A Function  |
   |g       |[6] | Genesis     |
   |c       |[5] | Compose     |
   |a       |[4] | Ariety      |
