@@ -37,7 +37,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | v,r,s are txns with diff signatures        |
   
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be derieved. 
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
 ***********************Transaction*****************************
 # TODO's
