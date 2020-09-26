@@ -1,7 +1,4 @@
- ![Logo](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png)
 
- ![URL](https://deepakraous.github.io/elixir_blocks/)
- 
 **Elemental Blockchain in Elixir**
 
   Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state compostion technique**, specifically creating a simple computational FlexCapacitor! State Machine!!. which we refer to as our MVP(Minimal Viable Product).
@@ -26,9 +23,10 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
   # Transactions in Ethereum (v1.0)
 
-  This section assumes that you have gone through the series in its enterity. Notice the version on this section(v1.0) I want to emphasis that "Transactions" is a huge topic and hence needs multiple updates.
-  
-  
+  This section assumes that you have gone through the series in its enterity. Notice the version on this section(v1.0) **"Transactions"** is a huge topic and hence needs multiple updates. 
+ 
+  Transactions in Ethereum is a message between Ethereun addresses "from", "to" addresses. Transaction Root refers the root Transactions root Trie for the current block. Recall Trie data structure from our previous write-up.
+
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
   |--------|----|--------------------------------------------|
@@ -39,7 +37,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | v,r,s are txns with diff signatures        |
 
-  #Symbols definition( In Progress... )
+  #Symbols sample( In Progress... )
   
   |Symbol  |Type| Description |
   |--------|----|-------------|
@@ -195,4 +193,5 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   ```
 
 # References
+https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
