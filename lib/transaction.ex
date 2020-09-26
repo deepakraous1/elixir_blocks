@@ -180,11 +180,11 @@ defmodule Transaction do
   def init(file_path) do
       # Blockchain 
       file_path = File.cwd!<>"/db"
-      block = %{  }
+      block = %{"k0":"vp"  }
       {:ok, db} = CubDB.start_link(Data_dir: file_path)
-      key = new_key()
-      CubDB.put(db, key, genesis)
-      [key, genesis]
+      key = Crypto.gen_random()
+      CubDB.put(db, key, block)
+      [key, block]
     end
 end
 
