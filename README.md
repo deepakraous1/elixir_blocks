@@ -36,6 +36,9 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |To      |[3] | Address of the reciepent of the Eth Txn    |
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | v,r,s are txns with diff signatures        |
+  |data    |[6] | tbd                                        |
+  |init    |[7] | tbd                                        |
+ 
   
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
