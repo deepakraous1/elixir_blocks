@@ -22,7 +22,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |RLP-E   |[RLP-e](https://medium.com/coinmonks/ethereum-under-the-hood-part-ii-i-933411deebe1)| RLP-e |
   |VM      |[ETH](https://medium.com/coinmonks/ethereum-under-the-hood-part-i-ver-0-1-4f2fb24b3d68)| ETH   |
   
-  # Transactions in Ethereum (v1.0)
+  # Transactions in Ethereum 
 
   This section assumes that you have gone through the series in its enterity. Notice the version on this section(v1.0) **"Transactions"** is a huge topic and hence needs multiple updates. 
   
@@ -36,6 +36,8 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |To      |[3] | Address of the reciepent of the Eth Txn    |
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | v,r,s are txns with diff signatures        |
+  
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be derieved. 
 
 ***********************Transaction*****************************
 # TODO's
