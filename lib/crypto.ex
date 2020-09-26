@@ -1,5 +1,6 @@
 import BloomFilter
 import Trie
+import Poison
 defmodule Crypto do
 
     @doc ~S"""
@@ -7,7 +8,8 @@ defmodule Crypto do
      ## https://stackoverflow.com/questions/41735442
      ##  
 
-      iex> [_] = Crypto.gen_random()
+      iex> r = Crypto.gen_random()
+      iex> r
            
      """
     def gen_random() do
@@ -18,13 +20,13 @@ defmodule Crypto do
     end
 
     @doc ~S"""
-     Generates Random 32 bits
+     Returns a hash
      ## https://stackoverflow.com/questions/41735442
      
-      iex> [_] = Crypto.hash("block")
+      iex> _random_hash = Crypto.hash("abcde")
            
      """
-    def hash(%{}=block) do
+    def hash(block) do
         block
         |>Poison.encode16 # Convert to binary
         |>sha_256
