@@ -159,10 +159,11 @@ TBD Fillers section assumes that you have gone through the series in its enterit
 
   # External libraries[Elixir]
   ```
-    {:poison, "~> 4.0"},
-    {:retrieval, "~> 0.9.1"},
-    {:cubdb, "~> 0.17.0"},
-    {:qr_code, "~> 2.1.0"}
+      {:dependency, "~> 0.2.0", override: true},    
+      #{:exmoji, "~> 0.2.0"},
+      {:poison, "~> 4.0"},
+      {:retrieval, "~> 0.9.1"},
+      {:cubdb, "~> 0.17.0"}
 
   ```
   
