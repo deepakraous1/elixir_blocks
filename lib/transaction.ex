@@ -26,17 +26,19 @@ defmodule Transaction do
   # Source:MASS65*
   # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
   @doc "Basic Block def"
-  def block do
+  def transaction do
 
-    block = %{
+    transaction = %{
       meta: "Acryonym*",
       address: "reciepient address of the block reward",
-      timestamp: "0001 00:00:00 UTC",
-      prev_hash: "hash_of_the_previous_block",
-      hash: "hash_of_the_current_block",
-      data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
-      player: "Players in The System",
-      
+      nonce:"0001 00:00:00 UTC",
+      gas_price: "hash_of_the_previous_block",
+      gas_limit:"hash_of_the_current_block",
+      To: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
+      Value: "Players in The System",
+      v: "Players in The System",
+      r: "Players in The System",
+      s: "Players in The System"
     }
 
   end
@@ -45,7 +47,7 @@ defmodule Transaction do
   # Source:MASS65*
   # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
   @doc "Genesis block def"
-  def genesis do 
+  def transaction_type do 
 
     genesis = %{
       meta: "MASS65*",
@@ -60,8 +62,8 @@ defmodule Transaction do
 
   end
 
-  @doc "New Key Generation"
-  defp new_key() do
+  @doc "Get type"
+  defp get_type() do
     rand_string = Crypto.gen_random()
     new_hash = Crypto.sha_256(rand_string)
     new_hash
@@ -180,11 +182,10 @@ defmodule Transaction do
   def init(file_path) do
       # Blockchain 
       file_path = File.cwd!<>"/db"
-      block = %{"k0":"vp"  }
+      block = %{  }
       {:ok, db} = CubDB.start_link(Data_dir: file_path)
       key = Crypto.gen_random()
       CubDB.put(db, key, block)
       [key, block]
     end
 end
-
