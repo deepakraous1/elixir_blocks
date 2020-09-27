@@ -31,14 +31,14 @@ defmodule Transaction do
     transaction = %{
       meta: "Acryonym*",
       address: "reciepient address of the block reward",
-      nonce:"0001 00:00:00 UTC",
-      gas_price: "hash_of_the_previous_block",
-      gas_limit:"hash_of_the_current_block",
-      To: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
-      Value: "Players in The System",
-      v: "Players in The System",
-      r: "Players in The System",
-      s: "Players in The System"
+      nonce: "Nonce/a large number",
+      gas_price: "A unit price for a contract",
+      gas_limit: "Max unit price for this contract",
+      To: "Reciepient Address of the current Block reward",
+      Value: "Value of the Txn in Wei",
+      v: "v->tbd",
+      r: "r->tbd",
+      s: "s-tbd>"
     }
 
   end
