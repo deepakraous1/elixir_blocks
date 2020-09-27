@@ -1,10 +1,10 @@
 
 **Elemental Blockchain in Elixir**
 
-Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state compostion technique**, specifically creating a simple computational FlexCapacitor! State Machine!!. which we refer to as our MVP(Minimal Viable Product).
+Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state composition technique**, specifically creating to create simple State Machine!!. which we refer to as our MVP(Minimal Viable Product).
  
 I plan to use existing code snippets as a baseline for from our storyline. Please feel free to fork your own path for 
-***stories [ 9,10,11]*** -12,13 where we will be gluing to conclude this series in 13. 
+***stories [ 9,10,11]*** -12,13 where we will be gluing to conclude this series in 13. for Tranasctions. 
 
 ***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store [key:valu\. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs**,last but not the least I am trying to follow **DRY**(Don't Repeat Yourself). so let us keep the chatter in the low, finally we will recap,redo,refine and show off our fruit of Labour as ***MVP0.0090.001***. 
 
@@ -24,7 +24,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
   # Transactions in Ethereum 
 
-  This section assumes that you have gone through the series in its enterity. Notice the version on this section(v1.0) **"Transactions"** is a huge topic and hence needs multiple updates. 
+  **"Transactions"** is importanWe t topic and needs multiple chapters [9,10,11] and we will be getting our hands dirty by doing.
   
   
   # Transactions[4.2 Yellow Paper] Symbol-table
