@@ -101,18 +101,6 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   9. Update unit test status in Readme.md
   10. Goto Step 1
   
-  # UseCase:Exceptions
-  1. Save State[0,1,2,3,4,...,n]
-  2. Audit State[0,1,2,3,4,...,n]
-  3. Send Notification*[Cat:0,Cat:1,Cat:2,Cat:3,x:n]
-  4. Generate Docs[Readme.md]
-  5. Send Issue to Github^[if error]
-  6. Fix Issue mentioned in step above[5]
-  7. Repeat Step[1,n]
-  
-  *Notification:Research
-  ^Github:Research
-  
   # MVP0.090.01["WOLF"]
   (transaction) (data) (blockchain) (processing server) (processing) before:priority:20151105
   Above format State definition, share Sims to US.
