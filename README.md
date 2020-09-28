@@ -96,12 +96,10 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   4. Generate Docs 
   5. Build status in Readme.md
   6. Update Gists
-  7. Auto Publish 
-  8. Build sourcestream
-  9. Push step:8 -> Quay.io
-  10. Run all unit tests
-  11. Update unit test status in Readme.md
-  12. Goto Step 1
+  7. Auto Publish
+  8. Run all unit tests
+  9. Update unit test status in Readme.md
+  10. Goto Step 1
   
   # UseCase:Exceptions
   1. Save State[0,1,2,3,4,...,n]
