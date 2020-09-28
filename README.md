@@ -42,7 +42,6 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
-***********************Transaction*****************************
 # TODO's
 - [x] Genesis
 - [x] BlockHeader
