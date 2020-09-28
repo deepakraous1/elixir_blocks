@@ -113,19 +113,6 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   6. Fix Issue mentioned in step above[5]
   7. Repeat Step[1,n]
  
-  # Minimal Viable Product( WE )
-  1. Fix Local build issues
-  2. Emulate all steps for "Happy Path"
-  3. Push code to Github 
-  4. Form Team( Max: 4 - 6 ) 
-  4. Demo Date+Hackacthon 
-  5. **No PPT warriors**
-  6. No Judging needed.
-  7. We Push+Show
-  8. Pick a lead to Prepare Iconic Slides
-  9. All Slides should be in github
-  10.Best Team Wins a Suprise
-  12.Time Hallooooweeen
   
   # SharpTooling( Emulators )
   1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
