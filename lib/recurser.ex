@@ -14,7 +14,6 @@ defmodule Recurser do
   import BloomFilter
   import Crypto
   import Trie
-  import ElixirBlocks
  
   
   @doc ~S"""
