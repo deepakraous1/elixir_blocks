@@ -195,4 +195,3 @@ https://deepakraous.github.io/elixir_blocks/
 
 https://railsware.com/blog/important-overhaul-elixir-did-to-erlang-to-become-appealing-web-development-tool/
 
-![](https://railsware.com/blog/wp-content/uploads/2016/08/Important-overhaul-Elixir.png?raw=true)
