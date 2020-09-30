@@ -52,11 +52,11 @@ defmodule Block do
     def insert(block_chain,new_block,file_path) do
       # Blockchain 
       
-      new_block.prev_hash =  block_chain.hash
+      prev_hash = "placeholder for previous hash" 
       file_path = File.cwd!<>"/db"
       {:ok, db} = CubDB.start_link(data_dir: file_path)
       key = new_key()
-      new_block.hash = key
+      hash = key
       CubDB.put(db, key, new_block)
       [ block_chain | new_block]
 
