@@ -94,7 +94,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   3. Github Actions is a part of Github workflow
   4. Generate Docs 
   5. Build status in Readme.md
-  6. Update Gists(??)
+  6. Update Gists
   7. Auto Publish
   8. Run all unit tests
   9. Update unit test status in Readme.md
@@ -103,7 +103,23 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   # MVP0.090.01["WOLF"]
   (transaction) (data) (blockchain) (processing server) (processing) before:priority:20151105
   Above format State definition, share Sims to US.
+  
+  #  Rule Definition[In Progress]
+  1. BR_0_0_0: Exception Code Should have Instrumentation@
+  2. Audit State
+  3. Send Notification*
+  4. Generate Docs
+  5. Send Issue to Github*
+  6. Fix Issue mentioned in step above[5]
+  7. Repeat Step[1,n]
  
+  
+  # SharpTooling( Emulators )
+  1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
+  2. Emulate all steps mentioned in workflow
+  3. Push code to Github
+  4. On Push Auto Unit test
+  5. Status on Github
   
   # Github Action( Option:1 )
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
@@ -125,7 +141,24 @@ TBD Fillers section assumes that you have gone through the series in its enterit
       {:cubdb, "~> 0.17.0"}
 
   ```
-  
+
+  # Directory 
+  ```bash
+  .
+    ├── bloomfilter.ex
+    ├── crypto.ex
+    ├── elixir_blocks.ex
+    ├── elixir_rlp
+    │   ├── decode.ex
+    │   └── encode.ex
+    ├── key_value.ex
+    ├── noder.ex
+    ├── recurser.ex
+    ├── transaction.ex
+    ├── trie.ex
+    └── wallet.ex
+
+  ``` 
   ## Installation
   If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
