@@ -1,6 +1,6 @@
 ![](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png?raw-true)
 
-**Elemental Blockchain in Elixir**( In Progress )
+**Elemental Blockchain in Elixir**
 
 Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state composition technique**, specifically creating to create simple State Machine!!. which we refer to as our MVP(Minimal Viable Product).
  
@@ -23,10 +23,9 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |RLP-E   |[RLP-e](https://medium.com/coinmonks/ethereum-under-the-hood-part-ii-i-933411deebe1)| RLP-e |
   |VM      |[ETH](https://medium.com/coinmonks/ethereum-under-the-hood-part-i-ver-0-1-4f2fb24b3d68)| ETH   |
   
-  # Transactions in Ethereum 
 
-  **"Transactions"** is importanWe t topic and needs multiple chapters [9,10,11] and we will be getting our hands dirty by doing.
-  
+  **"Transactions"** is important needs multiple storyline [9,10,11]. 
+  Transactions is the core of a blockchain , Ethereum Blockchain specifies transactions as a data structure otherwise the Transaction Trie. Have a look at the table below as specified in the Ethereumm Yellow Paper.
   
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
@@ -43,7 +42,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
- # Directory 
+ # Code structure 
   ```bash
   .
     ├── bloomfilter.ex
@@ -60,7 +59,6 @@ v,r,s fields represents cryptographical signed trancastion fields by which publi
     └── wallet.ex
 
   ``` 
-
 
 # TODO's
 - [x] Genesis
@@ -197,4 +195,3 @@ https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
 
 https://railsware.com/blog/important-overhaul-elixir-did-to-erlang-to-become-appealing-web-development-tool/
-
