@@ -43,6 +43,25 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
+ # Directory 
+  ```bash
+  .
+    ├── bloomfilter.ex
+    ├── crypto.ex
+    ├── elixir_blocks.ex
+    ├── elixir_rlp
+    │   ├── decode.ex
+    │   └── encode.ex
+    ├── key_value.ex
+    ├── noder.ex
+    ├── recurser.ex
+    ├── transaction.ex
+    ├── trie.ex
+    └── wallet.ex
+
+  ``` 
+
+
 # TODO's
 - [x] Genesis
 - [x] BlockHeader
@@ -143,23 +162,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
 
   ```
 
-  # Directory 
-  ```bash
-  .
-    ├── bloomfilter.ex
-    ├── crypto.ex
-    ├── elixir_blocks.ex
-    ├── elixir_rlp
-    │   ├── decode.ex
-    │   └── encode.ex
-    ├── key_value.ex
-    ├── noder.ex
-    ├── recurser.ex
-    ├── transaction.ex
-    ├── trie.ex
-    └── wallet.ex
-
-  ``` 
+ 
   ## Installation
   If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
