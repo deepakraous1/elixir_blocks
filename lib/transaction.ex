@@ -6,8 +6,6 @@ defmodule Transaction do
   import BloomFilter
   import Crypto
   import Trie
-  import ElixirBlocks
- 
   
   @doc ~S"""
   Inits a Genesis block.
