@@ -1,6 +1,6 @@
 ![](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png?raw-true)
 
-**Elemental Blockchain in Elixir**
+**Elemental Blockchain in Elixir**( In Progress )
 
 Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state composition technique**, specifically creating to create simple State Machine!!. which we refer to as our MVP(Minimal Viable Product).
  
