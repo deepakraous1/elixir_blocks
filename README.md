@@ -191,3 +191,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
+
+https://railsware.com/blog/important-overhaul-elixir-did-to-erlang-to-become-appealing-web-development-tool/
+
+![](https://railsware.com/blog/wp-content/uploads/2016/08/Important-overhaul-Elixir.png?raw=true)
