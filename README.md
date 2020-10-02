@@ -30,7 +30,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
   |--------|----|--------------------------------------------|
-  |Nonce   |[0] | Nonce is the base unit of Ethereum Crypto  |
+  |Nonce   |[0] | Number of Txn processed by the reciepent   |
   |GasPrice|[1] | GP is the price one has to pay for a Txn   |
   |GasLimit|[2] | GL is the max price set for the above Txn  |
   |To      |[3] | Address of the reciepent of the Eth Txn    |
@@ -40,7 +40,8 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |init    |[7] | tbd                                        |
  
   
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered.
+By combining the three fields one can decipher the sender of the current txn.
 
  # Code structure 
   ```bash
