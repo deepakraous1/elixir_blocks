@@ -119,10 +119,6 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   9. Update unit test status in Readme.md
   10. Goto Step 1
   
-  # MVP0.090.01["WOLF"]
-  (transaction) (data) (blockchain) (processing server) (processing) before:priority:20151105
-  Above format State definition, share Sims to US.
-
   
   # SharpTooling( Emulators )
   1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
@@ -134,14 +130,6 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   # Github Action
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
 
-  # Github Best Practices
-  1. ![link](https://www.datree.io/resources/github-best-practices)
-  2. xxxx
-  3. yyyy
-  
-  # Docker Alternatives( Option:2 ) ?????
-  1. Docker to test github actions?
-
   # External libraries[Elixir]
   ```
       {:dependency, "~> 0.2.0", override: true},    
@@ -152,7 +140,6 @@ TBD Fillers section assumes that you have gone through the series in its enterit
 
   ```
 
- 
   ## Installation
   If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
