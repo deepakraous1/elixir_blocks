@@ -122,16 +122,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   # MVP0.090.01["WOLF"]
   (transaction) (data) (blockchain) (processing server) (processing) before:priority:20151105
   Above format State definition, share Sims to US.
-  
-  #  Rule Definition[In Progress]
-  1. BR_0_0_0: Exception Code Should have Instrumentation@
-  2. Audit State
-  3. Send Notification*
-  4. Generate Docs
-  5. Send Issue to Github*
-  6. Fix Issue mentioned in step above[5]
-  7. Repeat Step[1,n]
- 
+
   
   # SharpTooling( Emulators )
   1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
@@ -140,7 +131,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   4. On Push Auto Unit test
   5. Status on Github
   
-  # Github Action( Option:1 )
+  # Github Action
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
 
   # Github Best Practices
