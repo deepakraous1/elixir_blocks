@@ -9,6 +9,22 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
 
 ***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store [key:valu\. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs**,last but not the least I am trying to follow **DRY**(Don't Repeat Yourself). so let us keep the chatter in the low, finally we will recap,redo,refine and show off our fruit of Labour as ***MVP0.0090.001***. 
 
+# Code structure 
+  ```bash
+  .
+    ├── bloomfilter.ex
+    ├── crypto.ex
+    ├── blocks.ex
+    ├── elixir_rlp
+    │   ├── decode.ex
+    │   └── encode.ex
+    ├── key_value.ex
+    ├── node.ex
+    ├── transaction.ex
+    ├── trie.ex
+    └── wallet.ex
+  ``` 
+
 **Note***: **This is a personal Blog of mine and does not reflect the opinions of my current employer.**
 
   |Concept |Chp| Topic |
@@ -42,24 +58,6 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered.
 By combining the three fields one can decipher the sender of the current txn.
-
- # Code structure 
-  ```bash
-  .
-    ├── bloomfilter.ex
-    ├── crypto.ex
-    ├── elixir_blocks.ex
-    ├── elixir_rlp
-    │   ├── decode.ex
-    │   └── encode.ex
-    ├── key_value.ex
-    ├── noder.ex
-    ├── recurser.ex
-    ├── transaction.ex
-    ├── trie.ex
-    └── wallet.ex
-
-  ``` 
 
 # TODO's
 - [x] Genesis
