@@ -1,4 +1,3 @@
-import BloomFilter
 import Trie
 import Poison
 defmodule Crypto do
