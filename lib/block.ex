@@ -47,7 +47,21 @@ defmodule Block do
       CubDB.put(db, key, block)
       [key, block]
     end
-  
+ 
+    def genesis_block do
+
+      genesis = %{
+        meta: "MASS65*",
+        address_from:  "232565FA051713BC8C67E58",#"hash(address(MASS65*))"
+        address_to: "232565FA051713BC8C67E59",
+        timestamp: DateTime.utc_now(),
+        prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
+        hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF", #"hash(next(MASS65*)))",
+        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+      } 
+     genesis
+
+    end
   
     def insert(block_chain,new_block,file_path) do
       # Blockchain 
