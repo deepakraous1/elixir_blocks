@@ -9,22 +9,6 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
 
 ***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store [key:valu\. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs**,last but not the least I am trying to follow **DRY**(Don't Repeat Yourself). so let us keep the chatter in the low, finally we will recap,redo,refine and show off our fruit of Labour as ***MVP0.0090.001***. 
 
-# Code structure 
-  ```bash
-  .
-    ├── bloomfilter.ex
-    ├── crypto.ex
-    ├── blocks.ex
-    ├── elixir_rlp
-    │   ├── decode.ex
-    │   └── encode.ex
-    ├── key_value.ex
-    ├── node.ex
-    ├── transaction.ex
-    ├── trie.ex
-    └── wallet.ex
-  ``` 
-
 **Note***: **This is a personal Blog of mine and does not reflect the opinions of my current employer.**
 
   |Concept |Chp| Topic |
@@ -39,14 +23,15 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |RLP-E   |[RLP-e](https://medium.com/coinmonks/ethereum-under-the-hood-part-ii-i-933411deebe1)| RLP-e |
   |VM      |[ETH](https://medium.com/coinmonks/ethereum-under-the-hood-part-i-ver-0-1-4f2fb24b3d68)| ETH   |
   
+  # Transactions in Ethereum 
 
-  **"Transactions"** is important needs multiple storyline [9,10,11]. 
-  Transactions is the core of a blockchain , Ethereum Blockchain specifies transactions as a data structure otherwise the Transaction Trie. Have a look at the table below as specified in the Ethereumm Yellow Paper.
+  **"Transactions"** is importanWe t topic and needs multiple chapters [9,10,11] and we will be getting our hands dirty by doing.
+  
   
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
   |--------|----|--------------------------------------------|
-  |Nonce   |[0] | Number of Txn processed by the reciepent   |
+  |Nonce   |[0] | Nonce is the base unit of Ethereum Crypto  |
   |GasPrice|[1] | GP is the price one has to pay for a Txn   |
   |GasLimit|[2] | GL is the max price set for the above Txn  |
   |To      |[3] | Address of the reciepent of the Eth Txn    |
@@ -56,8 +41,25 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |init    |[7] | tbd                                        |
  
   
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered.
-By combining the three fields one can decipher the sender of the current txn.
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
+
+ # Directory 
+  ```bash
+  .
+    ├── crypto.ex
+    ├── elixir_blocks.ex
+    ├── elixir_rlp
+    │   ├── decode.ex
+    │   └── encode.ex
+    ├── key_value.ex
+    ├── blck_node.ex
+    ├── recurser.ex
+    ├── transaction.ex
+    ├── trie.ex
+    └── wallet.ex
+
+  ``` 
+
 
 # TODO's
 - [x] Genesis
@@ -116,8 +118,8 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   8. Run all unit tests
   9. Update unit test status in Readme.md
   10. Goto Step 1
-  
-  
+
+   
   # SharpTooling( Emulators )
   1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
   2. Emulate all steps mentioned in workflow
@@ -125,7 +127,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   4. On Push Auto Unit test
   5. Status on Github
   
-  # Github Action
+  # Github Action( Option:1 )
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
 
   # External libraries[Elixir]
@@ -138,6 +140,7 @@ TBD Fillers section assumes that you have gone through the series in its enterit
 
   ```
 
+ 
   ## Installation
   If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
@@ -171,4 +174,4 @@ TBD Fillers section assumes that you have gone through the series in its enterit
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
 
-https://railsware.com/blog/important-overhaul-elixir-did-to-erlang-to-become-appealing-web-development-tool/
+
