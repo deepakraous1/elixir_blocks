@@ -1,38 +1,26 @@
 
 import Block
 defmodule Blockchain do
-    use GenServer
 
-    # Callbacks
-    @impl true
-    def init(stack) do
-      {:ok, stack}
-    end
+  def init do
+    block_chain = Block.genesis_block()
+    block_chain
+  end
 
-    @impl true
-    def handle_call(:pop, _from, [head | tail]) do
-      {:reply, head, tail}
-    end
+  @doc "Build a new block for given data and previous hash"
+  def new(block_chain, data) do
+  
+  newblock = %{
+    meta: "RND*",
+    address_from:  "232565FA051713BC8C67E58",#"hash(address(MASS65*))"
+    address_to: "232565FA051713BC8C67E59",
+    timestamp: DateTime.utc_now(),
+    prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
+    hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF", #"hash(next(MASS65*)))",
+    data: "[{k1,v1},{k1,v1},...,{Kn,Vn}]"
+  } 
 
-    @impl true
-    def handle_cast({:push, element}, state) do
-      {:noreply, [element | state]}
-    end
+  [block_chain,newblock]
 
-    # To Run
-
-    # Start the server
-    ##{:ok, pid} = GenServer.start_link(Stack, [:hello])
-
-    # This is the client
-    ##GenServer.call(pid, :pop)
-    #=> :hello
-
-   ##GenServer.cast(pid, {:push, :world})
-   #=> :ok
-
-   ##GenServer.call(pid, :pop)
-   #=> :world
-
- end
+end
  
