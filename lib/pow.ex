@@ -1,6 +1,6 @@
 defmodule Pow do
   @moduledoc """
-  Recursive state machine named "Recurser"
+  Simple Proof of work"
 
   1.Block
   2.BlockHeader
@@ -11,7 +11,6 @@ defmodule Pow do
   6.Trie 
 
   """
-  import BloomFilter
   import Crypto
   import Trie
  
