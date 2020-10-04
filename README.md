@@ -63,6 +63,25 @@ v,r,s fields represents cryptographical signed trancastion fields by which publi
   ``` 
 
 
+```elixir
+iex(2)> Block.init("a")
+[
+  [
+    "3F79BB7B435B05321651DAEFD374CDC681DC06FAA65E374E38337B88CA046DEA",
+    %{
+      address_from: "232565FA051713BC8C67E58",
+      address_to: "232565FA051713BC8C67E59",
+      data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
+      hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF",
+      meta: "MASS65*",
+      prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
+      timestamp: ~U[2020-10-04 20:06:25.236654Z]
+    }
+  ]
+]
+
+```
+
 # TODO's
 - [x] Genesis
 - [x] BlockHeader
@@ -177,21 +196,3 @@ https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
 
 
-```elixir
-iex(2)> Block.init("a")
-[
-  [
-    "3F79BB7B435B05321651DAEFD374CDC681DC06FAA65E374E38337B88CA046DEA",
-    %{
-      address_from: "232565FA051713BC8C67E58",
-      address_to: "232565FA051713BC8C67E59",
-      data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
-      hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF",
-      meta: "MASS65*",
-      prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
-      timestamp: ~U[2020-10-04 20:06:25.236654Z]
-    }
-  ]
-]
-
-````
