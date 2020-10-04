@@ -17,6 +17,21 @@ defmodule Block do
     """
   
     import Poison
+
+    def genesis_block do
+
+      genesis = %{
+        meta: "MASS65*",
+        address_from:  "232565FA051713BC8C67E58",#"hash(address(MASS65*))"
+        address_to: "232565FA051713BC8C67E59",
+        timestamp: DateTime.utc_now(),
+        prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
+        hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF", #"hash(next(MASS65*)))",
+        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
+      } 
+     genesis
+
+    end
   
     @doc "New Key Generation"
     defp new_key() do
@@ -25,6 +40,7 @@ defmodule Block do
       new_hash
     end
   
+
     @doc "Block Header definition"
     def block_header(block) do
       block
@@ -41,27 +57,14 @@ defmodule Block do
       # Blockchain 
       file_path = File.cwd!<>"/db"
       block = %{  }
-      block = Recurser.genesis()
+      block = genesis_block()
       {:ok, db} = CubDB.start_link(data_dir: file_path)
       key = new_key()
       CubDB.put(db, key, block)
-      [key, block]
+      [ [key, block] ]
     end
  
-    def genesis_block do
-
-      genesis = %{
-        meta: "MASS65*",
-        address_from:  "232565FA051713BC8C67E58",#"hash(address(MASS65*))"
-        address_to: "232565FA051713BC8C67E59",
-        timestamp: DateTime.utc_now(),
-        prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
-        hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF", #"hash(next(MASS65*)))",
-        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
-      } 
-     genesis
-
-    end
+    
   
     def insert(block_chain,new_block,file_path) do
       # Blockchain 
@@ -76,6 +79,8 @@ defmodule Block do
 
     end
   
+
+   
   end
   
 
