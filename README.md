@@ -25,9 +25,9 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   
   # Transactions in Ethereum 
 
-  **"Transactions"** is importanWe t topic and needs multiple chapters [9,10,11] and we will be getting our hands dirty by doing.
+  **"Transactions"** is important and needs multiple chapters [9,10,11]. Chapter 9 we cover the Transaction fields[0-4]. Ethereum yellow paper defines Transaction(T) as Trie data strcuture.   
   
-  
+
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
   |--------|----|--------------------------------------------|
