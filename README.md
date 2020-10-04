@@ -19,8 +19,8 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
   |--------|----|--------------------------------------------|
-  |Nonce   |[0] | Nonce is the base unit of Ethereum Crypto  |
-  |GasPrice|[1] | GP is the price one has to pay for a Txn   |
+  |Nonce   |[0] | Number of sent txn by sender               |
+  |GasPrice|[1] | GP is the price has to pay for a Txn       |
   |GasLimit|[2] | GL is the max price set for the above Txn  |
   |To      |[3] | Address of the reciepent of the Eth Txn    |
   |Value   |[4] | The value of this Txn in Wie               |
@@ -28,7 +28,6 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |data    |[6] | tbd                                        |
   |init    |[7] | tbd                                        |
  
-  
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
 
