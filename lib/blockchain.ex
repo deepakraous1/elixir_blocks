@@ -1,5 +1,5 @@
-
 import Block
+import Crypto
 defmodule Blockchain do
 
   def init do
@@ -21,6 +21,6 @@ defmodule Blockchain do
   } 
 
   [block_chain,newblock]
+end
 
 end
- 
