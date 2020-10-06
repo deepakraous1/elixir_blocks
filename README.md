@@ -103,22 +103,21 @@ iex(2)> Block.init("a")
 - [ ] Repl.it
 
 # Managing this project using Github
-TBD Fillers section assumes that you have gone through the series in its enterity. Notice the version on this section(v1.0) **"Transactions"** is a huge topic and hence needs multiple updates. 
+ I assume that you have gone through the series in its enterity. Notice the version on this section(v1.0) **"Transactions"** is a huge topic and hence needs multiple updates. 
   
 # Live Progress on Github and Medium
 
-  This article is being published in both Medium and in gitub([ {Manual+Auto},{x},xx,n] ] ). I propose to 
-  a way to automate technical {publishing + coding} together. Authoring of the stories will be done using Github's Gist.
+  This article is being published in both Medium and in gitub. I propose a way to automate technical {publishing + coding} together. Authoring of the stories will be done using Github's Gist and on Medium
 
                    Github
     +--------+   +-------+    +-------+
     |        | --+ act   +--> |       |
     | MrkDwn |   +-------+    | Dploy |
-    |        |   | plgins|    |       |
+    | SrcCode|   | plgins|    |       |
     |        |   |   !   |    |       |
     +---+----+   +-------+    +-------+
         :                         ^
-        |          Terraform      |
+        |                         |
         +-------------------------+
 
  [9-Toy Blockchain](https://medium.com/@derao512/ethereum-under-the-hood-part-9-transactions-3ead47725a8f)
@@ -135,17 +134,18 @@ TBD Fillers section assumes that you have gone through the series in its enterit
   5. Build status in Readme.md
   6. Update Gists
   7. Auto Publish
-  8. Run all unit tests
+  8. Run tests
   9. Update unit test status in Readme.md
   10. Goto Step 1
 
-   
   # SharpTooling( Emulators )
   1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
   2. Emulate all steps mentioned in workflow
   3. Push code to Github
   4. On Push Auto Unit test
   5. Status on Github
+  6. Repl.it integ
+  
   
   # Github Action( Option:1 )
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
