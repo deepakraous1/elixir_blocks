@@ -23,42 +23,10 @@ defmodule Pow do
   # Source:MASS65*
   # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
   @doc "Basic Block def"
-  def block do
 
-    block = %{
-      meta: "Acryonym*",
-      address: "reciepient address of the block reward",
-      timestamp: "0001 00:00:00 UTC",
-      prev_hash: "hash_of_the_previous_block",
-      hash: "hash_of_the_current_block",
-      data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
-      player: "Players in The System",
-      
-    }
-
-  end
-  #Genesis block
-
-  # Source:MASS65*
-  # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
-  @doc "Genesis block def"
-  def genesis do 
-
-    genesis = %{
-      meta: "MASS65*",
-      address: "abc",
-      timestamp: "0001 00:00:00",
-      prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
-      hash: "hash(next(MASS65*)))",
-      data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]",
-      player: "hash(address(MASS65*))"
-    }   
-    ElixirBlocks.Crypto.hash(genesis) 
-
-  end
 
   @doc "New Key Generation"
-  defp new_key() do
+  def new_key() do
     rand_string = Crypto.gen_random()
     new_hash = Crypto.sha_256(rand_string)
     new_hash
@@ -149,20 +117,7 @@ defmodule Pow do
   def spawn_block(state) do
     spawn(fn -> IO.puts("hello world") end)
   end
- 
-  @doc ~S"""
-  Inits a Genesis block.
-  ## Examples
-      iex> [_ ,_ ] = ElixirBlocks.init("x")         
-  """
-  def init(file_path) do
-      # Blockchain 
-      file_path = File.cwd!<>"/db"
-      block_chain = %{  }
-      {:ok, db} = CubDB.start_link(Data_dir: file_path)
-      key = new_key()
-      CubDB.put(db, key, genesis)
-      [key, genesis]
-    end
+
+
 end
 
