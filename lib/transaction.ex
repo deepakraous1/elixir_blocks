@@ -1,12 +1,11 @@
+import Cryp
+import Trie
 defmodule Transaction do
   @moduledoc """
   Module to hold all Transaction related info
 
   """
-  import BloomFilter
-  import Crypto
-  import Trie
-  
+ 
   @doc ~S"""
   Inits a Genesis block.
   # [ {hash_0:data_0},{hash_1:data_1},{hash_n:data_n} ]
