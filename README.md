@@ -26,7 +26,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | v,r,s are txns with diff signatures        |
   |data    |[6] | tbd                                        |
-  |init    |[7] | tbd                                        |
+  |init    |[7] | initialize a program counter               |
  
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
@@ -195,3 +195,4 @@ https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
 
 
+![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
