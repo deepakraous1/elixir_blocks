@@ -1,3 +1,6 @@
+import Cryp
+import Trie
+
 defmodule Pow do
   @moduledoc """
   Simple Proof of work"
@@ -11,8 +14,7 @@ defmodule Pow do
   6.Trie 
 
   """
-  import Crypto
-  import Trie
+
  
   @doc ~S"""
   Inits a Genesis block.
@@ -26,9 +28,9 @@ defmodule Pow do
 
 
   @doc "New Key Generation"
-  def new_key() do
-    rand_string = Crypto.gen_random()
-    new_hash = Crypto.sha_256(rand_string)
+  def new_hash() do
+    rand_string = Cryp.gen_random()
+    new_hash = Cryp.sha_256(rand_string)
     new_hash
   end
 
@@ -120,4 +122,6 @@ defmodule Pow do
 
 
 end
+
+
 
