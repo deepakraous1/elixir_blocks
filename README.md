@@ -28,9 +28,13 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |data    |[6] | tbd                                        |
   |init    |[7] | initialize a program counter               |
  
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Take a look at the diagram below.
+
+
 
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
+
+
 
 
   |Concept |Chp| Topic |
@@ -195,4 +199,5 @@ iex(2)> Block.init("a")
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
+
 
