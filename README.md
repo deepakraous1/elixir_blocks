@@ -30,6 +30,8 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
  
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. 
 
+![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
+
 
   |Concept |Chp| Topic |
   |--------|---|-------|
@@ -194,5 +196,3 @@ iex(2)> Block.init("a")
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
 
-
-![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
