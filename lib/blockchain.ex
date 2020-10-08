@@ -1,5 +1,5 @@
 import Block
-import Crypto
+import Cryp
 
 defmodule Blockchain do
 
