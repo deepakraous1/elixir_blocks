@@ -2,7 +2,7 @@
 
 **Elemental Blockchain in Elixir**
 
-Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state composition technique**, specifically creating to create simple State Machine!!. 
+Welcome , COVID-19 is still around, please stay safe,informed and gentle with yourself. Take a deep breath, the Mission is for the next 3 stories is to write few lines of code as possible and compose the stories using ***recursive state composition technique**, specifically creating to create simple State Machine!!. which we refer to as our MVP(Minimal Viable Product).
  
 I plan to use existing code snippets as a baseline for from our storyline. Please feel free to fork your own path for 
 ***stories [ 9,10,11]*** -12,13 where we will be gluing to conclude this series in 13. for Tranasctions. 
@@ -28,9 +28,17 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |data    |[6] | tbd                                        |
   |init    |[7] | initialize a program counter               |
  
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Take a look at the diagram below.
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Lets take a look at the definition below
 
+```bash
+ 
+(279) ECDSAPUBKEY(pr ∈ B32) ≡ pu ∈ B64
+(280) ECDSASIGN(e ∈ B32, pr ∈ B32) ≡ (v ∈ B1, r ∈ B32, s ∈ B32)
+(281) ECDSARECOVER(e ∈ B32, v ∈ B1, r ∈ B32, s ∈ B32) ≡ pu ∈ B64
 
+```
+  
+ 
 
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
 
