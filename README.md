@@ -1,4 +1,4 @@
-![](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png?raw-true)
+]![](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/key.png?raw-true)
 
 **Elemental Blockchain in Elixir**
 
@@ -26,10 +26,10 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | Signature of the Txn (Id of sndr)          |
   |data    |[6] | An byte array of data.                     |
-  |init*    |[7] | returns the body of code fragment*         |
+  |init*   |[7] | returns the body of code fragment*         |
 
-  *init: tbd
- 
+*init: tbd
+
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Lets take a look at the definition below
 
 ```bash
@@ -209,5 +209,4 @@ iex(2)> Block.init("a")
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
-
 
