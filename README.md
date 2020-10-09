@@ -24,9 +24,11 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |GasLimit|[2] | GL is the max price set for the above Txn  |
   |To      |[3] | Address of the reciepent of the Eth Txn    |
   |Value   |[4] | The value of this Txn in Wie               |
-  |v,r,s   |[5] | v,r,s are txns with diff signatures        |
-  |data    |[6] | tbd                                        |
-  |init    |[7] | initialize a program counter               |
+  |v,r,s   |[5] | Signature of the Txn (Id of sndr)          |
+  |data    |[6] | An byte array of data.                     |
+  |init*    |[7] | returns the body of code fragment*         |
+
+  *init: tbd
  
 v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Lets take a look at the definition below
 
