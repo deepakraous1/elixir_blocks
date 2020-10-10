@@ -7,7 +7,7 @@ Welcome , COVID-19 is still around, please stay safe,informed and gentle with yo
 I plan to use existing code snippets as a baseline for from our storyline. Please feel free to fork your own path for 
 ***stories [ 9,10,11]*** -12,13 where we will be gluing to conclude this series in 13. for Tranasctions. 
 
-***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store key:value. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs**,last but not the least I am trying to follow **DRY**(Don't Repeat Yourself). so let us keep the chatter in the low, finally we will recap,redo,refine. 
+***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store key:value. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs**,last but not the least I am trying to follow **DRY**(Don't Repeat Yourself).  
 
 **Note***: **This is a personal Blog of mine and does not reflect the opinions of my current employer.**
 
@@ -24,27 +24,17 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |GasLimit|[2] | GL is the max price set for the above Txn  |
   |To      |[3] | Address of the reciepent of the Eth Txn    |
   |Value   |[4] | The value of this Txn in Wie               |
-  |v,r,s   |[5] | Signature of the Txn (Id of sndr)          |
-  |data    |[6] | An byte array of data.                     |
-  |init*   |[7] | returns the body of code fragment*         |
-
-*init: tbd
-
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Lets take a look at the definition below
-
-```bash
+  |v,r,s   |[5] | v,r,s are txns with diff signatures        |
+  |data    |[6] | tbd                                        |
+  |init    |[7] | initialize a program counter               |
  
-(279) ECDSAPUBKEY(pr ∈ B32) ≡ pu ∈ B64
-(280) ECDSASIGN(e ∈ B32, pr ∈ B32) ≡ (v ∈ B1, r ∈ B32, s ∈ B32)
-(281) ECDSARECOVER(e ∈ B32, v ∈ B1, r ∈ B32, s ∈ B32) ≡ pu ∈ B64
-
-Pr-> Private Key
-Pu-> Public Key
+v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Take a look at the diagram below.
 
 
-```
-  
+
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
+
+
 
 
   |Concept |Chp| Topic |
@@ -153,8 +143,15 @@ iex(2)> Block.init("a")
   8. Run tests
   9. Update unit test status in Readme.md
   10. Goto Step 1
-  11. Repl.it
 
+  # SharpTooling( Emulators )
+  1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
+  2. Emulate all steps mentioned in workflow
+  3. Push code to Github
+  4. On Push Auto Unit test
+  5. Status on Github
+  6. Repl.it integ
+  
   
   # Github Action( Option:1 )
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
@@ -169,6 +166,7 @@ iex(2)> Block.init("a")
 
   ```
 
+ 
   ## Installation
   If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
@@ -183,7 +181,21 @@ iex(2)> Block.init("a")
   
   ```
 
- 
+  #Symbols sample( In Progress... )
+  
+  |Symbol  |Type| Description |
+  |--------|----|-------------|
+  |+       |[10] | Add.       |
+  |0       |[9] | Null        |
+  |1       |[8] | A Value     |
+  |f       |[7] | A Function  |
+  |g       |[6] | Genesis     |
+  |c       |[5] | Compose     |
+  |a       |[4] | Ariety      |
+  |x       |[3] | para-0      |
+  |y       |[2] | para-1      |
+  |z       |[1] | para-2      |
+  |a1      |[0] | para-3      |
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
