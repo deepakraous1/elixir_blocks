@@ -137,6 +137,96 @@ iex(2)> Block.init("a")
   9. Update unit test status in Readme.md
   10. Goto Step 1
 
+  
+  # Github Action( Option:1 )
+  ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
+
+  # External libraries[Elixir]
+  ```
+      {:dependency, "~> 0.2.0", override: true},    
+      #{:exmoji, "~> 0.2.0"},
+      {:poison, "~> 4.0"},
+      {:retrieval, "~> 0.9.1"},
+      {:cubdb, "~> 0.17.0"}
+
+  ```
+
+ 
+  ## Installation
+  If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+  by adding `elixir_blocks` to your list of dependencies in `mix.exs`:
+
+  ```elixir
+  
+  def deps do
+    [
+      {:elixir_blocks, "~> 0.1.0"}
+    ]
+  end
+  
+  ```
+
+# References
+https://deepakraous.github.io/elixir_blocks/
+![link](https://github.com/aitoroses/elixir-kv)
+
+
+: ~U[2020-10-04 20:06:25.236654Z]
+    }
+  ]
+]
+
+```
+
+# TODO's
+- [x] Genesis
+- [x] BlockHeader
+- [x] Construct a Block
+- [ ] Construct a Wallet,Address
+- [ ] Construct Transaction Model
+- [ ] Form a { K,V }
+- [ ] RLP { K,V }
+- [ ] Trie
+- [ ] Cubdb
+- [ ] Repl.it
+
+
+# Managing this project using Github
+ I assume that you have gone through the series in its enterity. Notice the version on this section(v1.0) **"Transactions"** is a huge topic and hence needs multiple updates. 
+  
+# Live Progress on Github and Medium
+
+  This article is being published in both Medium and in gitub. I propose a way to automate technical {publishing + coding} together. Authoring of the stories will be done using Github's Gist and on Medium
+
+                   Github
+    +--------+   +-------+    +-------+
+    |        | --+ act   +--> |       |
+    | MrkDwn |   +-------+    | Dploy |
+    | SrcCode|   | plgins|    |       |
+    |        |   |   !   |    |       |
+    +---+----+   +-------+    +-------+
+        :                         ^
+        |                         |
+        +-------------------------+
+
+ [9-Toy Blockchain](https://medium.com/@derao512/ethereum-under-the-hood-part-9-transactions-3ead47725a8f)
+
+  # Why?
+
+  For this chapter and the next two we will be trying a live way of publishing and coding at the same time. Please be patient with me while I am trying to Automate technical blogging to the max.
+
+# UseCase:Main Flow in using Github
+  1. Push source code to Github
+  2. Step 1 triggers Github Actions
+  3. Github Actions is a part of Github workflow
+  4. Generate Docs 
+  5. Build status in Readme.md
+  6. Update Gists
+  7. Auto Publish
+  8. Run tests
+  9. Update unit test status in Readme.md
+  10. Goto Step 1
+
   # SharpTooling( Emulators )
   1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
   2. Emulate all steps mentioned in workflow
