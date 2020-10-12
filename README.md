@@ -13,7 +13,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
 
 # Transactions in Ethereum 
 
-  **"Transactions"** is important and needs multiple chapters [9,10,11]. Chapter 9 we cover the Transaction fields[0-4]. Ethereum yellow paper defines Transaction(T) as Trie data strcuture.   
+  **"Transactions"** is an important topic  and needs multiple chapters [9,10,11]. Chapter 9 we cover the Transaction fields[0-4]. Ethereum yellow paper defines Transaction(T) as Trie data strcuture.   
   
 
   # Transactions[4.2 Yellow Paper] Symbol-table
@@ -25,11 +25,10 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |To      |[3] | Address of the reciepent of the Eth Txn    |
   |Value   |[4] | The value of this Txn in Wie               |
   |v,r,s   |[5] | v,r,s are txns with diff signatures        |
-  |data    |[6] | tbd                                        |
+  |data    |[6] | data                                       |
   |init    |[7] | initialize a program counter               |
  
-v,r,s fields represents cryptographical signed trancastion fields by which public transaction information can be deciphered. Take a look at the diagram below.
-
+v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered.  Take a look at the diagram below 
 
 
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
@@ -200,5 +199,3 @@ iex(2)> Block.init("a")
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
-
-
