@@ -130,7 +130,7 @@ iex(2)> Block.init("a")
 
   # Why?
 
-  For this chapter and the next two we will be trying a live way of publishing and coding at the same time. Please be patient with me while I am trying to Automate technical blogging to the max.
+  For this chapter and the next two we will be trying a live way of publishing and coding at the same time. Please be patient with me while I am trying to Automate technical blogging.
 
 # UseCase:Main Flow in using Github
   1. Push source code to Github
@@ -151,7 +151,6 @@ iex(2)> Block.init("a")
   4. On Push Auto Unit test
   5. Status on Github
   6. Repl.it integ
-  
   
   # Github Action( Option:1 )
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
