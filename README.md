@@ -143,14 +143,7 @@ iex(2)> Block.init("a")
   8. Run tests
   9. Update unit test status in Readme.md
   10. Goto Step 1
-
-  # SharpTooling( Emulators )
-  1. For workflow 2: ![Github](https://github.com/vgaidarji/android-github-actions-emulator)
-  2. Emulate all steps mentioned in workflow
-  3. Push code to Github
-  4. On Push Auto Unit test
-  5. Status on Github
-  6. Repl.it integ
+  11. repl.it
   
   # Github Action( Option:1 )
   ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
