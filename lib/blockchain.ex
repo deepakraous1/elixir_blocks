@@ -9,8 +9,9 @@ defmodule Blockchain do
   end
 
   @doc "Build a new block for given data and previous hash"
-  def new(block_chain, data) do
-    
+  def new(bchain, data) do
+   
+    hash_prev_block = bchain[:hash]
     newblock = %{
       meta: "RND*",
       address_from:  "232565FA051713BC8C67E58",#"hash(address(MASS65*))"
@@ -24,5 +25,11 @@ defmodule Blockchain do
   
 
   end
+
+ 
+
+
+
+
 
 end
