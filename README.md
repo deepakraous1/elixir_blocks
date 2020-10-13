@@ -172,23 +172,6 @@ iex(2)> Block.init("a")
   
   ```
 
-  #Symbols sample( In Progress... )
-  
-  |Symbol  |Type| Description |
-  |--------|----|-------------|
-  |+       |[10] | Add.       |
-  |0       |[9] | Null        |
-  |1       |[8] | A Value     |
-  |f       |[7] | A Function  |
-  |g       |[6] | Genesis     |
-  |c       |[5] | Compose     |
-  |a       |[4] | Ariety      |
-  |x       |[3] | para-0      |
-  |y       |[2] | para-1      |
-  |z       |[1] | para-2      |
-  |a1      |[0] | para-3      |
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
-
-
