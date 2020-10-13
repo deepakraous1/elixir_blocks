@@ -13,8 +13,8 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
 
 # Transactions in Ethereum 
 
-  **"Transactions"** is an important topic  and needs multiple chapters [9,10,11]. Chapter 9 we cover the Transaction fields[0-4]. Ethereum yellow paper defines Transaction(T) as Trie data strcuture.   
-  
+  **"Transactions"** is an important topic  and needs multiple chapters [9,10,11]. Chapter 9 we cover the Transaction fields[0-4]. Ethereum yellow paper defines Transaction(T) as Trie data strcuture.
+  The yellow paper defines two types of transactions 1)Message call Txn 2) Contract creation Txn. Both types of Txn have the same set of fields as described in the table below.
 
   # Transactions[4.2 Yellow Paper] Symbol-table
   |Symbol  |Type| Description                                |
