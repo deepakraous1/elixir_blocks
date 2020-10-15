@@ -7,7 +7,7 @@ Welcome , COVID-19 is still around, please stay safe,informed and gentle with yo
 I plan to use existing code snippets as a baseline for from our storyline. Please feel free to fork your own path for 
 ***stories [ 9,10,11]*** -12,13 where we will be gluing to conclude this series in 13. for Tranasctions. 
 
-***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store key:value. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs*.
+***Elixir*** is the language of choice along with ***OTP(Open Transport(e) Protocol)***. We will use a simple { key, value } local db to store key:value. To speed up delivery time I  I am planning to use external libraries as I see fit. Please poke around @ the External Libraries in **mix.exs**,last but not the least I am trying to follow **DRY**(Don't Repeat Yourself).  
 
 **Note***: **This is a personal Blog of mine and does not reflect the opinions of my current employer.**
 
@@ -28,7 +28,8 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |data    |[6] | data                                       |
   |init    |[7] | initialize a program counter               |
  
-v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered.  Take a look at the diagram below which depicts the Transaction trie.
+v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered.  Take a look at the diagram below 
+
 
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
 
@@ -89,8 +90,9 @@ iex(2)> Block.init("a")
 - [x] Genesis
 - [x] BlockHeader
 - [x] Construct a Block
+- [ ] Form a Blockchain
 - [ ] Construct a Wallet,Address
-- [ ] Construct Transaction Model
+- [ ] Construct Transaction 
 - [ ] Form a { K,V }
 - [ ] RLP { K,V }
 - [ ] Trie
@@ -174,3 +176,5 @@ iex(2)> Block.init("a")
 # References
 https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
+
+
