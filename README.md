@@ -28,7 +28,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |data    |[6] | data                                       |
   |init    |[7] | initialize a program counter               |
  
-v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered, formally defined as Tw,Tr,Ts in Appdx F. 
+v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered,formally defined as Tw,Tr,Ts in Appdx F. 
 Have a look at the diagram below 
 
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
@@ -133,21 +133,6 @@ iex(2)> Block.init("a")
 
   For this chapter and the next two we will be trying a live way of publishing and coding at the same time. Please be patient with me while I am trying to Automate technical blogging.
 
-# UseCase:Main Flow in using Github
-  1. Push source code to Github
-  2. Step 1 triggers Github Actions
-  3. Github Actions is a part of Github workflow
-  4. Generate Docs 
-  5. Build status in Readme.md
-  6. Update Gists
-  7. Auto Publish
-  8. Run tests
-  9. Update unit test status in Readme.md
-  10. Goto Step 1
-
-  
-  # Github Action( Option:1 )
-  ![Github Actions](https://github.githubassets.com/images/modules/site/features/actions-workflow.svg)
 
   # External libraries[Elixir]
   ```
