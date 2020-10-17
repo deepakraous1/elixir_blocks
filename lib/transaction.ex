@@ -59,7 +59,8 @@ defmodule Transaction do
       "MASS:6.5"        
   """
   def init(state) do 
-    %{}
+    body =  " "
+    body
   end
 
 
