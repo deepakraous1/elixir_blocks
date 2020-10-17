@@ -160,5 +160,4 @@ iex(2)> Block.init("a")
   ```
 
 # References
-https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
