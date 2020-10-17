@@ -15,24 +15,11 @@ defmodule Pow do
 
   """
 
+ @doc "Block Header definition"
+ def mine(block) do
+  block
+ end
  
-  @doc ~S"""
-  Inits a Genesis block.
-  # [ {hash_0:data_0},{hash_1:data_1},{hash_n:data_n} ]
-  ## Examples
-      iex> [_] = ElixirBlocks.block("blockchain","newblockchain","txn")         
-  """
-  # Source:MASS65*
-  # Sha256:232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3
-  @doc "Basic Block def"
-
-
-  @doc "New Key Generation"
-  def new_hash() do
-    rand_string = Cryp.gen_random()
-    new_hash = Cryp.sha_256(rand_string)
-    new_hash
-  end
 
   @doc "Block Header definition"
   def block_header(block) do
@@ -120,8 +107,13 @@ defmodule Pow do
     spawn(fn -> IO.puts("hello world") end)
   end
 
+  @doc "New Key Generation"
+  defp new_key() do
+    rand_string = Cryp.gen_random()
+    new_hash = Cryp.sha_256(rand_string)
+    new_hash
+  end
+
 
 end
-
-
 
