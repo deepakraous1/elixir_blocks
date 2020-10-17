@@ -18,7 +18,7 @@ defmodule Transaction do
   def transaction do
 
     transaction = %{
-      meta: "Acryonym*",
+      meta: "txnZ",
       address: "reciepient address of the block reward",
       nonce: "Nonce/a large number",
       gas_price: "A unit price for a contract",
@@ -51,12 +51,17 @@ defmodule Transaction do
 
   end
 
-  @doc "Get type"
-  def get_type() do
-    rand_string = Crypto.gen_random()
-    new_hash = Crypto.sha_256(rand_string)
-    new_hash
+
+  @doc ~S"""
+  Valids a Block
+  ## Examples
+      iex> [_] = ElixirBlocks.valid( "blk","blk_chain" ) 
+      "MASS:6.5"        
+  """
+  def init(state) do 
+    %{}
   end
+
 
   @doc "Block Header definition"
   def send(recvr_address) do
