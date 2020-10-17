@@ -31,13 +31,6 @@ defmodule Cryp do
         |>sha_256
     end
 
-    @doc ~S"""
-      Append the given block to an existing block
-      iex> [_] = Crypto.add_block("newBlock")         
-     """
-    def add_block(%{}=block) do 
-        %{block|hash: hash(block)}
-    end
 
     @doc ~S"""     
        Sha256 Hash
@@ -59,8 +52,12 @@ defmodule Cryp do
         |>Base.encode16
         
     end
+
+
+   @doc "Calculate and put the hash in the block"
+    def new_hash(%{} = block) do
+        %{ block | hash: sha_256(block) }
+    end
     
     
 end
-
-   
