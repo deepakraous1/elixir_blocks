@@ -69,7 +69,8 @@ Have a look at the diagram below
 # Toy Blockchain
 
 ```elixir
-iex(2)> Block.init("a")
+ 
+iex(2)> Blockchain.init("a")
 [
   [
     "3F79BB7B435B05321651DAEFD374CDC681DC06FAA65E374E38337B88CA046DEA",
@@ -160,4 +161,5 @@ iex(2)> Block.init("a")
   ```
 
 # References
+https://deepakraous.github.io/elixir_blocks/
 ![link](https://github.com/aitoroses/elixir-kv)
