@@ -21,13 +21,10 @@ defmodule Block do
     def genesis_block do
 
       genesis = %{
-        meta: "MASS65*",
-        address_from:  "232565FA051713BC8C67E58",#"hash(address(MASS65*))"
-        address_to: "232565FA051713BC8C67E59",
+        data: "MASS65*",
         timestamp: DateTime.utc_now(),
         prev_hash: "232565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF3",
         hash: "242565FA051713BC8C67E58A38A34EBDE4B98AE2F168EFBA0A4BD16400E00CF", #"hash(next(MASS65*)))",
-        data: "[{k0,v0},{k1,v1},...,{Kn,Vn}]"
       } 
      genesis
 
@@ -39,11 +36,26 @@ defmodule Block do
       new_hash = Crypto.sha_256(rand_string)
       new_hash
     end
-  
+ 
+     
+     @doc "Build a new block for given data and previous hash"
+  def new(data, prev_hash) do
+    new_block = %{
+      data: data,
+      prev_hash: prev_hash,
+      timestamp: NaiveDateTime.utc_now,
+    }
+  end
+
 
     @doc "Block Header definition"
     def block_header(block) do
       block
+    end
+
+    @doc "Block Header definition"
+    def block_body(blockHeader) do
+      blockHeader
     end
     
     @doc ~S"""
@@ -64,25 +76,5 @@ defmodule Block do
       [ [key, block] ]
     end
  
-    
-  
-    def insert(block_chain,new_block,file_path) do
-      # Blockchain 
-      
-      prev_hash = "placeholder for previous hash" 
-      file_path = File.cwd!<>"/db"
-      {:ok, db} = CubDB.start_link(data_dir: file_path)
-      key = new_key()
-      hash = key
-      CubDB.put(db, key, new_block)
-      [ block_chain | new_block]
-
     end
-  
-
-   
-  end
-  
-
-
   
