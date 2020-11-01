@@ -2,6 +2,19 @@
 import Poison
 defmodule Cryp do
 
+    # Specify which fields to hash in a block
+    @fields_tohash [:data, :timestamp, :prev_hash]
+
+    
+     @doc "Calculate hash of block"
+     def hash(%{} = block) do
+        block
+        |> Map.take(@fields_tohash)
+        |> Poison.encode!
+        |> sha_256
+     end
+
+
     @doc ~S"""
      Generates Random 32 bits
      ## https://stackoverflow.com/questions/41735442
@@ -17,6 +30,10 @@ defmodule Cryp do
         |> Base.encode64 
         |> binary_part(0, length)
     end
+
+
+    
+
 
     @doc ~S"""
      Returns a hash
@@ -61,3 +78,5 @@ defmodule Cryp do
     
     
 end
+
+   
