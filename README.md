@@ -28,7 +28,7 @@ I plan to use existing code snippets as a baseline for from our storyline. Pleas
   |data    |[6] | data                                       |
   |init    |[7] | initialize a program counter               |
  
-v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered,formally defined as Tw,Tr,Ts in Appdx F. 
+v,r,s fields represents cryptographical signed (ECDSA) transaction fields by which the sender address can be deciphered,formally defined as Tw,Tr,Ts in Appdx F.Ethereum uses 3 elliptic curve functions ECDSAPUBKEY,ECDSASIGN,ECDSARECOVER
 Have a look at the diagram below 
 
 ![image](https://github.com/deepakraous/elixir_blocks/blob/master/assets/image/txn.png?raw-true)
