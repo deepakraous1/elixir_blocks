@@ -20,7 +20,7 @@ defmodule Cryp do
      ## https://stackoverflow.com/questions/41735442
      ##  
 
-      iex> r = Crypto.gen_random()
+      iex> r = Cryp.gen_random()
       iex> r
            
      """
@@ -39,7 +39,7 @@ defmodule Cryp do
      Returns a hash
      ## https://stackoverflow.com/questions/41735442
      
-      iex> _random_hash = Crypto.hash("abcde")
+      iex> _random_hash = Cryp.hash("abcde")
            
      """
     def hash(block) do
@@ -51,7 +51,7 @@ defmodule Cryp do
 
     @doc ~S"""     
        Sha256 Hash
-       iex> [_] = Crypto.sha_256(<<101,102>>)          
+       iex> [_] = Cryp.sha_256(<<101,102>>)          
      """
     def sha_256(data) do
 
@@ -62,7 +62,7 @@ defmodule Cryp do
 
     @doc ~S"""     
        address
-       iex> [_] = Crypto.address(address)          
+       iex> [_] = Cryp.address(address)          
      """
      def address(data) do
         :crypto.hash(data)
