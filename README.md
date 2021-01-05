@@ -48,7 +48,7 @@ Have a look at the diagram below
   
   
   
- # Directory 
+ # Directory Structure
   ```bash
   .
     ├── crypto.ex
