@@ -42,7 +42,7 @@ Have a look at the diagram below
   |Keccak  |[Keccak](https://medium.com/@derao512/ethereum-under-the-hood-part-6-hashing-31077c7659ca)| Hash  |
   |Fortnite|[Fortnite](https://medium.com/coinmonks/ethereum-under-the-hood-part-5-fortniting-ethereum-eaf314c970c8)| Game  |
   |Trie-Dat|[Trie](https://medium.com/coinmonks/ethereum-under-the-hood-part-4-the-trie-a3f71f8dbef8)| Trie  |
-  |RLP-D   |[RLP-d](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-c0c07f5c0714)| RLP-d |
+  |RLP-D   |[RLP-d](https://deepakrao-6329.medium.com/ethereum-under-the-hood-part-3-rlp-decoding-c50a16d772cc)| RLP-d |
   |RLP-E   |[RLP-e](https://deepakrao-6329.medium.com/ethereum-under-the-hood-part-2-rlp-encoding-63205462af9b)| RLP-e |
   |VM      |[ETH](https://deepakrao-6329.medium.com/ethereum-under-the-hood-part-1-ver-0-2-45dd21d572ea)| ETH   |
   
