@@ -36,15 +36,14 @@ Have a look at the diagram below
 
   |Concept |Chp| Topic |
   |--------|---|-------|
-  |ToyBlock|[ToyBlkchain](https://medium.com/@derao512/ethereum-under-the-hood-part-9-transactions-3ead47725a8f)| ToyBlk|
-  |BlkChn-2|[Blkchain-1](https://medium.com/@derao512/ethereum-under-the-hood-part-8-blocks-2-8941d88014c0)  | Blk-1 |
-  |BlkChn-1|[Blchain-0](https://medium.com/@derao512/ethereum-under-the-hood-part-7-blocks-7f223510ba10)| Blk-0 |
-  |Keccak  |[Keccak](https://medium.com/@derao512/ethereum-under-the-hood-part-6-hashing-31077c7659ca)| Hash  |
-  |Fortnite|[Fortnite](https://medium.com/coinmonks/ethereum-under-the-hood-part-5-fortniting-ethereum-eaf314c970c8)| Game  |
-  |Trie-Dat|[Trie](https://medium.com/coinmonks/ethereum-under-the-hood-part-4-the-trie-a3f71f8dbef8)| Trie  |
-  |RLP-D   |[RLP-d](https://deepakrao-6329.medium.com/ethereum-under-the-hood-part-3-rlp-decoding-c50a16d772cc)| RLP-d |
-  |RLP-E   |[RLP-e](https://deepakrao-6329.medium.com/ethereum-under-the-hood-part-2-rlp-encoding-63205462af9b)| RLP-e |
-  |VM      |[ETH](https://deepakrao-6329.medium.com/ethereum-under-the-hood-part-1-ver-0-2-45dd21d572ea)| ETH   |
+  |BlkChn-2|[Blkchain-1](https://derao.medium.com/ethereum-under-the-hood-part-8-blocks-2-5fba93293213)| Blk-1 |
+  |BlkChn-1|[Blchain-0](https://derao.medium.com/ethereum-under-the-hood-part-7-blocks-c8a5f57cc356)| Blk-0 |
+  |Keccak  |[Keccak](https://derao.medium.com/ethereum-under-the-hood-part-6-hashing-6abafa318bc6)| Hash  |
+  |Fortnite|[Fortnite](https://derao.medium.com/ethereum-under-the-hood-part-5-fortniting-ethereum-4f0851f22673)| Game  |
+  |Trie-Dat|[Trie](https://derao.medium.com/ethereum-under-the-hood-part-4-the-trie-fc029e25ed04)| Trie  |
+  |RLP-D   |[RLP-d](https://derao.medium.com/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)| RLP-d |
+  |RLP-E   |[RLP-e](https://derao.medium.com/ethereum-under-the-hood-part-2-rlp-encoding-ver-0-3-c37a69781855)| RLP-e |
+  |VM      |[ETH](https://derao.medium.com/ethereum-under-the-hood-part-1-ver-0-4-7ac9ccbfd0f6)| ETH   |
   
   
   
