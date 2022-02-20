@@ -127,7 +127,7 @@ iex(2)> Blockchain.init("a")
         |                         |
         +-------------------------+
 
- [9-Toy Blockchain](https://medium.com/@derao512/ethereum-under-the-hood-part-9-transactions-3ead47725a8f)
+ 
 
   # Why?
 
